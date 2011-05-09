@@ -1,0 +1,1 @@
+document.write ('<A HREF="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/sub/119707670/x92/default/empty.gif/37393332313531343464633738383630" target="_top"><IMG SRC="http://ad.hani.co.kr/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');

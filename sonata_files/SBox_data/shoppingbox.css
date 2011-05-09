@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* Reset Css */
+body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,input,button,blockquote,th,td{margin:0;padding:0;font:12px/1.3 굴림,gulim,AppleGothic,Arial,Helvetica,Clean,Sans-serif;-webkit-text-size-adjust:none;}
+body{text-align:center;}
+table{border-collapse:collapse;border-spacing:0;}
+em,cite,address,dfn,var{font-style:normal;}
+dl,ul,ol{list-style:none;}
+img{border:0;vertical-align:middle;}
+a{color:#666;text-decoration:none;}
+a:hover{text-decoration:underline;}
+fieldset{border:0;}
+hr,caption{display:none;}
+h1,legend{visibility:hidden;width:0;height:0;line-height:0;overflow:hidden;position:absolute;top:-10000px;}
+select{font:12px 굴림,gulim,AppleGothic,Arial,Helvetica,Clean,Sans-serif;}
+button{background:none;border:none;cursor:pointer;}
+
+/* Layout Css */
+#doc{text-align:left;margin:0 auto;color:#666;}
+
+/* = Common Css = */
+.hidden{visibility:hidden;width:0;height:0;line-height:0;overflow:hidden;position:absolute !important;top:-10000px;}
+
+/* = shopping = */
+.shoppingbox{position:relative;height:318px;border:1px solid #e6e6e6;overflow:hidden;float:left;margin-right:15px;}
+.shoppingbox .hd h2{margin-bottom:12px;color:#000;font-weight:bold;}
+.shoppingbox .hd h2 a{color:#000;}
+.shoppingbox .bd{position:relative;padding-top:38px;zoom:1;}
+.shoppingbox .shopping .shopping_area{display:none;}
+.shoppingbox .on .shopping_area,.shoppingbox .on .bestmalls_area{display:block !important;}
+.shoppingbox .bd h3{position:absolute;left:0;top:0;}
+.shoppingbox .bd h3 a{display:block;height:20px;height: 21px\9;padding-top:7px;padding-top: 6px\9;background-color:#fafafa;border-bottom:1px solid #e6e6e6;border-right:1px solid #e6e6e6;color:#5c5c5c;text-align:center;text-decoration:none;}
+.shoppingbox .bd .on h3 a{height:21px;background-color:#fff;border-bottom:none;font-weight:bold;}
+.shoppingbox .bd .shopping01 h3 a{width:99px;}
+.shoppingbox .bd .shopping02 h3{left:100px;}
+.shoppingbox .bd .shopping02 h3 a{width:99px;}
+.shoppingbox .bd .shopping03 h3{left:200px;}
+.shoppingbox .bd .shopping03 h3 a{width:98px;}
+.shoppingbox .bd .shopping h3.shoppinghome span{padding-right:7px;background:url(http://images.joinsmsn.com/ui_jmn/shoppingbox/u_common.gif) right -61px no-repeat;}
+.shoppingbox .bd .on .shoppinghome a{background-color:#fff;}
+.shoppingbox .bd h3.img a{padding-top:6px;}
+.shoppingbox .bd .on h3.img a{height:22px;}
+.shoppingbox .bd .bestmalls_area{clear:both;display:none;margin:0 8px 0 9px;padding:0 0 10px 2px;border-bottom:1px solid #ebebeb;zoom:1;}
+.shoppingbox .bd .bestmalls_area:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.shoppingbox .bd .bestmalls_area li{float:left;padding-right:8px;font-family:돋움,dotum,arial;font-size:11px;line-height:16px;white-space:nowrap;}
+.shoppingbox .bd .bestmalls_area a{color:#484848;font-weight:bold;}
+.shoppingbox .bd .bestmalls_area a:hover{color:#e66c00;}
+.shoppingbox .bd .bestmalls_area .shoppinghome{margin-right:6px;padding:0 6px 0 0;background:url(http://images.joinsmsn.com/ui_jmn/shoppingbox/u_common.gif) right -32px no-repeat;}
+.shoppingbox .bd .bestmalls_area .shoppinghome a{color:#e66c00;}
+.shoppingbox .shop{padding-top:14px;text-align:center;}
+.shoppingbox .shop .shop_mall{clear:both;zoom:1;height:169px;margin:0 auto;padding-left:10px;text-align:center;overflow:hidden;}
+.shoppingbox .shop .shop_mall:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.shoppingbox .shop .shop_mall li{float:left;width:69px;margin-bottom:10px;font:11px/13px "돋움",dotum,AppleGothic,Arial,Helvetica,Clean,Sans-serif;letter-spacing:-1px;text-align:center;}
+.shoppingbox .shop .shop_mall li img{display:block;margin:0 auto 6px;}
+.shoppingbox .shop .shop_mall li a{display:block;width:51px;height:72px;margin:0 auto;border:1px solid #fff;color:#797979;overflow:hidden;}
+.shoppingbox .shop .shop_mall li a:hover{border:1px solid #fa8d19;color:#fa8d19;text-decoration:none;}
+.shoppingbox .bd .shop .shop_best{display:block;margin:0 9px;padding-top:9px;background:url(http://images.joinsmsn.com/ui_jmn/shoppingbox/l_dot.gif) 0 0 repeat-x;}
+.shoppingbox .prev_next{position:absolute;top:58px;right:0;width:31px;padding:0 9px 0 0;background-color:#fff;text-align:right;}
+.shoppingbox .prev_next button{width:15px;height:14px;background:url(http://images.joinsmsn.com/ui_jmn/shoppingbox/u_common.gif) 0 0 repeat-x;border:none;font-size:0;line-height:0;text-indent:-9999px;cursor:pointer;}
+.shoppingbox .prev_next button.next{width:16px;background-position:-15px 0;}
+.shoppingbox .bd .shopping02 .shop_lucky{display:block;height:91px;padding-top:13px;text-align:center;}
+.shoppingbox .bd .shopping02 .shop{margin:0 10px;border-top:1px solid #EBEBEB;}
+.shoppingbox .bd .shopping02 .shop li{margin-bottom:12px;padding-top:2px;}
+.shoppingbox .bd .shopping02 .prev_next{top:163px;}
+
+#joongang{width:278px;}
+#joongang .bd .bestmalls_area{margin-right:0;}
+#joongang .bd .shopping01 h3 a{width:92px;}
+#joongang .bd .shopping02 h3{left:93px;}
+#joongang .bd .shopping02 h3 a{width:92px;}
+#joongang .bd .shopping03 h3{left:186px;}
+#joongang .bd .shopping03 h3 a{width:93px;}
+#joongang .bd .on h3 a{color:#A66547;}
+#joongang .bd .on h3.shoppinghome span{background-position:right -97px;}
+#joongang .bd .shop .shop_mall{padding-left:0;}
+
+#isplus{width:298px;}
+#isplus .bd .bestmalls_area{margin-right:0;}
+#isplus .bd .bestmalls_area .shoppinghome{padding:0 9px 0 10px;}
+
+#joinsmsn{width:298px;}
+#joinsmsn .bd{padding-top:34px;}
+#joinsmsn .bd h3 a{display:block;height:18px;height: 19px\9;_height:18px;padding-top:5px;padding-top: 4px\9;_padding-top:5px;}
+#joinsmsn .bd .on h3 a{padding-top:6px;padding-top: 5px\9;_padding-top:6px;}
+#joinsmsn .bd .on .shoppinghome a span{color:#e66c00;}
+#joinsmsn .bd .shoppinghome span{color:#5C5C5C;}
+#joinsmsn .bd .shopping01 h3.shoppinghome span{background-position:right -133px;}
+#joinsmsn .bd .bestmalls_area{height:29px;padding-left:12px;}
+#joinsmsn .bd .bestmalls_area li{padding-right:8px;}
+#joinsmsn .bd .bestmalls_area a{font-weight:normal;}
+#joinsmsn .bd .shop{padding-top:12px;}
+#joinsmsn .bd .shop .shop_mall{height:163px;}
+#joinsmsn .bd .shop .shop_mall li{margin-bottom:7px;}
+#joinsmsn .bd .prev_next{top:67px;}
+#joinsmsn .bd .shopping02 .prev_next{top:169px;}
+#joinsmsn .bd .shopping02 .shop_lucky{height:90px;padding-top:11px;}
+#joinsmsn .bd .shopping02 .shop li{margin-bottom:8px;padding-top:0;}
+#joinsmsn .bd .shopping02 span.issue{display:block;margin-top:-10px;}
+
+#khan{width:238px;}
+#khan .bd .shopping01 h3 a{width:79px;}
+#khan .bd .shopping02 h3{left:80px;}
+#khan .bd .shopping02 h3 a{width:78px;}
+#khan .bd .shopping03 h3{left:159px;}
+#khan .bd .shopping03 h3 a{width:79px;}
+#khan .bd .shop .shop_mall{padding-left:8px;}
+#khan .bd .shop .shop_mall li{width:55px;}
+
+#newsis{width:254px;}
+#newsis .bd .shopping01 h3 a{width:84px;}
+#newsis .bd .shopping02 h3{left:85px;}
+#newsis .bd .shopping02 h3 a{width:84px;}
+#newsis .bd .shopping03 h3{left:170px;}
+#newsis .bd .shopping03 h3 a{width:84px;}
+#newsis .bd .shop .shop_mall{padding-left:3px;}
+#newsis .bd .shop .shop_mall li{width:62px;}
+
+#tv_daily{width:228px;}
+#tv_daily .bd .shopping01 h3 a{width:75px;}
+#tv_daily .bd .shopping02 h3{left:76px;}
+#tv_daily .bd .shopping02 h3 a{width:75px;}
+#tv_daily .bd .shopping03 h3{left:152px;}
+#tv_daily .bd .shopping03 h3 a{width:76px;}
+#tv_daily .bd .shop .shop_mall{padding-left:8px;}
+#tv_daily .bd .shop .shop_mall li{width:53px;}
+
+#sstv{width:238px;}
+#sstv .bd .shopping01 h3 a{width:78px;}
+#sstv .bd .shopping02 h3{left:79px;}
+#sstv .bd .shopping02 h3 a{width:78px;}
+#sstv .bd .shopping03 h3{left:158px;}
+#sstv .bd .shopping03 h3 a{width:81px;}
+#sstv .bd .shop .shop_mall{padding-left:9px;}
+#sstv .bd .shop .shop_mall li{width:55px;}
+
+#inews24{width:223px;height:258px;}
+#inews24 .bd .shopping01 h3 a{width:72px;}
+#inews24 .bd .shopping02 h3{left:73px;}
+#inews24 .bd .shopping02 h3 a{width:74px;}
+#inews24 .bd .shopping03 h3{left:148px;}
+#inews24 .bd .shopping03 h3 a{width:75px;}
+#inews24 .bd .shop .shop_mall{padding-left:1px;}
+#inews24 .bd .shop .shop_mall li{width:55px;margin-bottom:13px;}
+#inews24 .bd .bestmalls_area{padding-bottom:12px;}
+#inews24 .bd .shop{padding-top:16px;}
+#inews24 .bd .prev_next{top:60px;padding-right:4px;}
+#inews24 .bd .shopping02 .prev_next{top:166px;}
+
+#consumernews{width:252px;height:248px;}
+#consumernews .bd .shopping01 h3 a{width:83px;}
+#consumernews .bd .shopping02 h3{left:84px;}
+#consumernews .bd .shopping02 h3 a{width:83px;}
+#consumernews .bd .shopping03 h3{left:168px;}
+#consumernews .bd .shopping03 h3 a{width:84px;}
+#consumernews .bd .shop .shop_mall{padding-left:4px;}
+#consumernews .bd .shop .shop_mall li{width:61px;margin-bottom:8px;}
+#consumernews .bd .bestmalls_area{padding-bottom:12px;}
+#consumernews .bd .shop{padding-top:15px;}
+#consumernews .bd .prev_next{top:60px;}
+#consumernews .bd .shopping02 .prev_next{top:163px;}
+#consumernews .bd .shopping02 .shop_lucky{height:94px;padding-top:10px;}
+
+#segye{width:255px;height:228px;}
+#segye .bd{padding-top:35px;}
+#segye .bd .bestmalls_area{padding-bottom:6px;}
+#segye .bd .shopping01 h3 a{width:84px;}
+#segye .bd .shopping02 h3{left:85px;}
+#segye .bd .shopping02 h3 a{width:84px;}
+#segye .bd .shopping03 h3{left:170px;}
+#segye .bd .shopping03 h3 a{width:85px;}
+#segye .bd .shop .shop_mall{padding-left:5px;}
+#segye .bd .shop .shop_mall li{width:61px;margin-bottom:5px;}
+#segye .bd .shop{padding-top:10px;}
+#segye .bd .prev_next{top:50px;}
+#segye .bd .shopping02 .prev_next{top:147px;}
+#segye .bd .shopping02 .shop_lucky{height:87px;padding-top:8px;}
+
+#hani{width:238px;height:228px;}
+#hani .bd{padding-top:35px;}
+#hani .bd .bestmalls_area{padding-bottom:6px;}
+#hani .bd .shopping01 h3 a{width:79px;}
+#hani .bd .shopping02 h3{left:80px;}
+#hani .bd .shopping02 h3 a{width:78px;}
+#hani .bd .shopping03 h3{left:159px;}
+#hani .bd .shopping03 h3 a{width:79px;}
+#hani .bd .shop .shop_mall{padding-left:1px;}
+#hani .bd .shop .shop_mall li{width:59px;margin-bottom:5px;}
+#hani .bd .shop{padding-top:10px;}
+#hani .bd .prev_next{top:50px;padding-right:4px;}
+#hani .bd .shopping02 .prev_next{top:147px;}
+#hani .bd .shopping02 .shop_lucky{height:85px;padding-top:10px;}
+
+#ruliweb{width:148px;height:478px;}
+#ruliweb .bd .shopping01 h3 a{width:73px;}
+#ruliweb .bd .shopping02 h3{left:74px;}
+#ruliweb .bd .shopping02 h3 a{width:74px;}
+#ruliweb .shop{position:relative;margin:0 8px;padding-top:11px;border-top:1px solid #ebebeb;zoom:1;}
+#ruliweb .shop .shop_mall{height:252px;padding-left:0;}
+#ruliweb .shop .shop_mall li{width:66px;margin-bottom:6px;}
+#ruliweb .prev_next{top:-7px;padding-right:0;}
+#ruliweb .ft h4{float:left;position:relative;margin-top:-19px;background-color:#fff;color:#5d5d5d;font-weight:bold;font-family:"돋움",dotum,AppleGothic,Arial,Helvetica,Clean,Sans-serif;text-align:left;zoom:1;}
+#ruliweb .ft .best_seller .shop_mall{padding-top:1px;}
+#ruliweb .bd .shopping02 .shop_lucky{height:123px;padding-top:3px;}
+#ruliweb .bd .shopping02 .shop{height:123px;padding-top:13px;}
+#ruliweb .bd .shopping02 .shop ul{position:relative;zoom:1;margin:0 -8px;}
+#ruliweb .bd .shopping02 .shop li{margin-bottom:8px;}
+
+#inews24_v2{width:258px;height:258px;}
+#inews24_v2 .bd .shopping01 h3 a{width:85px;}
+#inews24_v2 .bd .shopping02 h3{left:86px;}
+#inews24_v2 .bd .shopping02 h3 a{width:85px;}
+#inews24_v2 .bd .shopping03 h3{left:172px;}
+#inews24_v2 .bd .shopping03 h3 a{width:86px;}
+#inews24_v2 .bd .shop .shop_mall{padding-left:5px;}
+#inews24_v2 .bd .shop .shop_mall li{width:62px;margin-bottom:13px;}
+#inews24_v2 .bd .bestmalls_area{padding-bottom:12px;}
+#inews24_v2 .bd .shop{padding-top:16px;}
+#inews24_v2 .bd .prev_next{top:60px;padding-right:4px;}
+#inews24_v2 .bd .shopping02 .prev_next{top:166px;}
+
+#tv_daily_v2{width:248px;}
+#tv_daily_v2 .bd .shopping01 h3 a{width:82px;}
+#tv_daily_v2 .bd .shopping02 h3 a{width:82px;}
+#tv_daily_v2 .bd .shopping03 h3 a{width:82px;}
+#tv_daily_v2 .bd .shopping02 h3{left:83px;}
+#tv_daily_v2 .bd .shopping03 h3{left:166px;}
+#tv_daily_v2 .bd .shop .shop_mall{padding-left:4px;}
+#tv_daily_v2 .bd .shop .shop_mall li{width:60px;}
+#tv_daily_v2 .bd .shop .shop_best{margin:0 auto;}
+
+#joinsmsn_v2{width:300px;height:320px;margin-right:0;background:url(http://images.joinsmsn.com/ui_portal/portal2010/index/v2/k_shopping.png) 0 0 no-repeat;border:none;}
+#joinsmsn_v2 .bd{padding:35px 1px 0 1px;}
+#joinsmsn_v2 .bd h3 a{display:block;width:100px;height:20px;margin:0;padding-top:5px;background:url(http://images.joinsmsn.com/ui_portal/portal2010/index/v2/k_shopping.png) 0 0 no-repeat;border:none;}
+#joinsmsn_v2 .bd .on h3 a{height:19px;padding-top:6px;}
+#joinsmsn_v2 .bd .shoppinghome span{color:#5C5C5C;}
+#joinsmsn_v2 .bd .shopping01 h3.shoppinghome span{background:none;}
+#joinsmsn_v2 .bd .shopping01 h3 a:hover,#joinsmsn_v2 .bd .on .shoppinghome a{background-position:-300px 0;}
+#joinsmsn_v2 .bd .shopping02 h3 a:hover{background-position:-400px 0;}
+#joinsmsn_v2 .bd .shopping03 h3 a:hover{background-position:-500px 0;}
+#joinsmsn_v2 .bd .shopping02 h3 a{background-position:-100px 0;}
+#joinsmsn_v2 .bd .shopping03 h3 a{background-position:-200px 0;}
+#joinsmsn_v2 .bd .bestmalls_area{height:29px;padding-left:12px;}
+#joinsmsn_v2 .bd .bestmalls_area li{padding-right:8px;}
+#joinsmsn_v2 .bd .bestmalls_area a{font-weight:normal;}
+#joinsmsn_v2 .bd .shop{padding-top:12px;}
+#joinsmsn_v2 .bd .shop .shop_mall{height:163px;}
+#joinsmsn_v2 .bd .shop .shop_mall li{margin-bottom:7px;}
+#joinsmsn_v2 .bd .prev_next{margin-right:1px;top:68px;}
+#joinsmsn_v2 .bd .shopping02 .prev_next{top:169px;}
+#joinsmsn_v2 .bd .shopping02 .shop_lucky{height:90px;padding-top:11px;}
+#joinsmsn_v2 .bd .shopping02 .shop li{margin-bottom:8px;padding-top:0;}

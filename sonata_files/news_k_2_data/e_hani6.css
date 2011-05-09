@@ -1,0 +1,12 @@
+#rc_110224 {width:588px; height:118px; border:1px solid #cccccc; text-align:center; background:#FFFFFF;}
+#rc_110224 img {border:0 none;}
+
+#rc_110224 .ttl {width:100%; height:12px;}
+#rc_110224 .ttl div {float:left; display:inline; overflow:hidden;}
+
+#rc_110224 .adarea {width:98%; margin:3px auto 0; text-align:left;}
+#rc_110224 .adarea div {float:left; display:inline; overflow:hidden;}
+#rc_110224 .slot {width:47%; height:24px; margin:0 0 0 2%; overflow:hidden;}
+#rc_110224 .blt {margin:7px 5px 0 0; _margin:8px 2px 0 0;}
+#rc_110224 a {font:bold 12px Dotum; text-decoration:none; color:#204691; line-height:25px;}
+#rc_110224 a:hover {text-decoration:underline;}

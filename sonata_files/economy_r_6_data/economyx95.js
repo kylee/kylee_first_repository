@@ -1,0 +1,18 @@
+document.write ('<html>\n');
+document.write ('<head>\n');
+document.write ('<title>우측 썸네일</title>\n');
+document.write ('<link rel="stylesheet" href="http://img.hani.co.kr/section-image/07/news/news_googleads_kisa.css" type="text/css" > \n');
+document.write ('\n');
+document.write ('</head>\n');
+document.write (' \n');
+document.write ('<body>\n');
+document.write ('<table width="94" border="0" cellspacing="0" cellpadding="0">\n');
+document.write ('<tr> \n');
+document.write ('<td align="center" class="news_addtime02" style="line-height:15px;padding:3 0 3 0;">\n');
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/economy/853341604/x95/OasDefault/r_mano_090706_9460_03/110117_9460.html/37393332313531343464633738383630" target="_blank">\n');
+document.write ('<img src="http://img.hani.co.kr/adimg/manomedi_110117/9460.gif" border="0"></a>\n');
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/economy/853341604/x95/OasDefault/r_mano_090706_9460_03/110117_9460.html/37393332313531343464633738383630" target="_blank">아내가바라는<br>남편과의잠자리</a>\n');
+document.write ('</td>\n');
+document.write ('</tr>\n');
+document.write ('</table>\n');
+document.write ('</body>');

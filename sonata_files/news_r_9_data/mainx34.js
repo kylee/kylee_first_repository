@@ -1,0 +1,12 @@
+document.write ('<table border="0px" cellpadding="0px" cellspacing="0px" width="100%" bgcolor="#EDE9DC">\n');
+document.write ('<tr>\n');
+document.write ('<td height="20">\n');
+document.write ('<table border="0px" cellpadding="0px" cellspacing="0px" width="100%">\n');
+document.write ('<tr>\n');
+document.write ('<td height="20" style="padding-left:5px">\n');
+document.write ('<img src="http://img.hani.co.kr/section-image/09/news/icon_090414_01.gif" width="25" height="10"  align="absmiddle" valign="absmiddle">\n');
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/main/756304915/x34/OasDefault/lotto_100513_24050_hot/lotto_110427_24050_x34.html/37393332313531343464633738383630" target="_blank"><font color="#C23434"><b>‘뜨아’ 로또1등 3등 6개 동시당첨?</b></font></a>\n');
+document.write ('</td>\n');
+document.write ('</tr>\n');
+document.write ('</table>\n');
+document.write ('</td></tr></table>');

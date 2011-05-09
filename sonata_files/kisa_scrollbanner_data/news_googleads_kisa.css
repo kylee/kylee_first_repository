@@ -1,0 +1,34 @@
+	body{margin:0;}
+
+	table
+	{font-family: verdana,Gulim,±¼¸²,UnDotum,AppleGothic,sans-serif; color: #000000; border:0px; font-size: 12px; line-height: 18px; margin-left : 0px; margin-top : 0px; margin-right : 0px; margin-bottom: 0px;}
+
+img{border:0; none}
+ul{padding-left:0;}
+
+	A:link, A:visited {color: #666666; text-decoration: none;}
+	A:hover, A:active {color: #993200 ; text-decoration: underline;}
+
+/* ¸µÅ© */
+
+
+	.link_006B56_02, .link_006B56_02 a, .link_006B56_02 a:visited {color: #006B56; text-decoration: none;}
+	.link_006B56_02 a:hover {color: #993200 ; text-decoration: underline;}
+
+	.link_993200_01, .link_993200_01 A:link, .link_993200_01 A:visited {color: #993200 ; text-decoration: none;}
+	.link_993200_01 A:hover {color: #993200 ; text-decoration: underline;}
+
+	.link_003399_02, .link_003399_02 A:link, .link_003399_02 A:visited {color: #003399; text-decoration: none;}
+	.link_003399_02 A:hover {color: #003399 ; text-decoration: underline;}
+
+/* layout °ü·Ã */
+
+	.dot05 {background-image:url('http://img.hani.co.kr/section-image/05/news2/dot05.gif'); background-repeat:repeat-x;}
+
+/* ÆùÆ® °ü·Ã */
+
+.f10 {font-family:'verdana',Dotum,µ¸À½,UnDotum,AppleGothic,sans-serif;font-size: 10px;}
+.f11 {font-family:'verdana',Dotum,µ¸À½,UnDotum,AppleGothic,sans-serif;font-size: 11px; color:#000000;}
+.f13 {font-family:'verdana',Gulim,±¼¸²,Gulim,AppleGothic,sans-serif;font-size: 13px;}
+.f14 {font-family:'verdana',Dotum,µ¸À½,UnDotum,AppleGothic,sans-serif;font-size: 14px;}
+.f15 {font-family:'verdana',Dotum,µ¸À½,UnDotum,AppleGothic,sans-serif;font-size: 15px;}

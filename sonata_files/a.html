@@ -1,0 +1,55 @@
+// tcomment cache hit 
+/**
+ * FillThat Commenting System
+ * - Bootup Script
+ * @package app.plugin
+ */
+
+/*
+*/
+
+/**
+ * FillThat Comment Box Script
+ * /plugin/boot
+ * - Booting Functions 
+ * 
+ * @author : flankerz
+ * @package app.script
+ */
+
+/**
+ * Constants
+ */
+var FTC_CMTBOX_POS = 0; // 0:Top, 1:Bottom 
+var FTC_FEATURED_MINIMUM = 50;
+
+/**
+ * HTML Markups
+ */
+var ftc_html_fillspace = '<ul class="ftc_cmt_list ftc_cmt_featured" id="ftc_featured_list_0"><li class=\"ftc_cmt_item ftc_featured_item_1 ftc_cmt_item_depth_ ftc_cmt_item_parent_0\" id=\"ftc_featured_item_4760669\" user=\"431672\"><div class=\"ftc_cmt_item_div\" style=\"margin-left: 0px;\"><table class=\"ftc_featured_border\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"nw\"></td><td class=\"n\"><span class=\"tail\"></span></td><td class=\"ne\"></td></tr><tr><td class=\"w\"></td><td class=\"c\"><div class=\"ftc_cmt_body_wrapper\"><div class=\"ftc_cmt_info\">    <a href=\"#\" onclick=\"ftc.popup.profile.toggle(4760669, \'twitter\', \'http://twitter.com/seovinci\', true, true); return false;\" class=\"ftc_cmt_info_portrait\"><img src=\"http://a0.twimg.com/sticky/default_profile_images/default_profile_3_normal.png?width=64&height=64\" alt=\"commenter\" title=\"\" class=\"ftc_user_portrait\" /><span class=\"ftc_osu_over twitter\" link=\"http://twitter.com/seovinci\"/></a>        <div class=\"ftc_cmt_info_inside\"><a href=\"#\" onclick=\"ftc.popup.profile.toggle(4760669, \'twitter\', \'http://twitter.com/seovinci\', false, true); return false;\" class=\"ftc_cmt_info_user\"><span class=\"user_name\">seovinci <span style=\"font-size: 10px; font-family: Tahoma, sans-serif; font-weight: normal; color:#ccc;\" class=\"ft_ip\">(124.195.***.***)</span> <img src=\"http://plugin.tcomment.com/images/icon_twitter.gif\" /></span></a><div class=\"ftc_cmt_info_support\" ><span id=\"ftc_cmt_ccash_featured_4760669\" class=\"ftc_cmt_ccash cnt_ccash_4760669\" style=\"font-weight:bold;\">13</span><span class=\"ftc_cmt_info_support_btns\"><span class=\"ftc_cmt_info_support_btn_vote\" ><a href=\"#thumb_up\" class=\"btn_recommend\" onclick=\"ftc.comment.agree(4760669, 1, true); return false;\" >추천</a><span class=\"ftc_cmt_agreed cnt_recommend_4760669\">18</span><a href=\"#thumb_down\" class=\"btn_disagree\"  onclick=\"ftc.comment.disagree(4760669, 0, true); return false;\" >반대</a><span class=\"ftc_cmt_disagreed cnt_disagree_4760669\">5</span></span></span></div></div></div><div class=\"ftc_cmt_body\"><span class=\"cmt_body cmt_body_4760669\">완전 차별이네...미국에 수출하는 자동차는 좀 달라야겠지...안그럼 거기서 장사 못할것같았지? 현대?? 우리나라니깐 그나마 현대 자동차 팔아주는거지....누가 이런 현대를 밀어주는 걸까? 대기업의 횡포란 이런것? 가격은 정찰체로 해서 그럴듯한 포장으로 우리나라에 팔고...미국에는 좀 더 좋은 품질의 자동차를 양산수출하고...그래 상대 봐가면서 장사하는거지? 우리나라에는 덤핑하고 말야...현대 차 쓰는 사람들 불편하고 흔들려서 멀미가 심하다 싶으면 다 리콜해..이것들이 사람 가지구 장난하네...그래놓고는 무슨 세계시장을 개척해? 대기업이란 간판 내리기를 바래...정말 창피하다...</span><span class=\"date_info\">한시간 전</span><a href=\"#delete-4760669, true\" title=\"이 댓글을 삭제하기\" onclick=\"ftc.comment.remove(4760669, true); return false;\" class=\"ftc_cmt_tools_action_remove\"  style=\\\"display: none;\\\" ><img src=\"http://plugin.tcomment.com/images/btn_remove.gif\" alt=\"삭제\"/></a></div><div class=\"ftc_cmt_tools\"><div class=\"ftc_cmt_tools_action\"><a href=\"#reply-4760669\" title=\"이 댓글에 댓글달기\" onclick=\"ftc.replybox.show(4760669, true); return false;\" class=\"ftc_cmt_tools_action_reply\">댓글달기</a><a href=\"#report-4760669\" title=\"이 댓글을 신고하기\" onclick=\"ftc.comment.report(4760669); return false;\" class=\"ftc_cmt_tools_action_report\">신고하기</a><!--<span class=\"ftc_cmt_report_cnt\"></span>--></div></div></div></td><td class=\"e\"></td></tr><tr><td class=\"sw\"></td><td class=\"s\"></td><td class=\"se\"></td></tr></table></div></li><li class=\"ftc_cmt_item ftc_featured_item_2\" id=\"ftc_featured_item_empty\"><table class=\"ftc_featured_border\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"nw\"></td><td class=\"n\"><span class=\"tail\"></span></td><td class=\"ne\"></td></tr><tr><td class=\"w\"></td><td class=\"c\"><div id=\"best_empty\"><p class=\"help\">이 곳은 베플을 위한 곳입니다. <strong>추천이 5개 이상</strong>인 댓글만 이곳에 올라갈 수 있습니다.</p></div><div id=\"best_empty_image\"></div></td><td class=\"e\"></td></tr><tr><td class=\"sw\"></td><td class=\"s\"></td><td class=\"se\"></td></tr></table></li></ul>';
+var ftc_html_cmt_list = '<ul class="ftc_cmt_list" id="ftc_cmt_list_0"></ul>';
+
+/**
+ * Wait while loading time
+ */
+var ft_boot_timer = null;
+var ft_boot_flag = false;
+
+// wait for core
+function ft_boot() {
+	clearTimeout(ft_boot_timer);
+	ft_boot_timer = null;
+	
+	if (typeof(ftc) != 'undefined' && ft_boot_flag == false) {
+		ft_boot_flag = true;
+		
+		// Init Fillthat Plugin
+		ftc.init();
+		ftc.topenid.init();
+	}
+	else {
+		ft_boot_timer = setTimeout(ft_boot, 500);
+	}
+}
+
+ft_boot();

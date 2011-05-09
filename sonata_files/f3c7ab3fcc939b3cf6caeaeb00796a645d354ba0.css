@@ -1,0 +1,2646 @@
+/*
+ * FTC
+ * Plugin Default CSS File
+ * - FTC 플러그인 기본 CSS 파일
+ * 
+ * @author flankerz
+ */
+
+/* @group Common */
+/* 공통적으로 쓰이는 기본 스타일 */
+a img {
+	border: 0;
+}
+
+/* IE7 이상 이미지 퀄리티 증가 */
+.ft_container img {
+	-ms-interpolation-mode: bicubic;
+}
+
+input.rb {
+	border: 1px solid #dfdfdf;
+	outline: none;
+	/* height: 18px !important; */
+	margin: 0 5px 0 0;
+	padding: 1px;
+	line-height: 16px !important;
+	font-size: 12px;
+}
+
+input.rb.focused {
+	border: 1px solid #8dc929;
+}
+
+input.good {
+
+}
+
+input.error {
+	border: 1px solid #f00;
+	background-color: #fcc;
+}
+
+p.error {
+	color: #f30;
+}
+
+input, label {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+input, textarea {
+	font-size: 12px;
+}
+
+textarea.disabled, input.disabled {
+	color: #ccc;
+}
+
+.no_ls {
+	letter-spacing: 0 !important;
+}
+
+.loading {
+	background: url(http://plugin.tcomment.com/images/loading.gif) no-repeat center center;
+}
+
+.hide {
+	display: none !important;
+}
+
+.f_left {
+	float: left;
+}
+
+.f_right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.lbl_left {
+	font-size: 12px;	
+	color: #666;
+	width: 110px;
+	text-align: right;
+	padding: 0 10px 0 0;
+	float: left;
+	height: 33px;
+	line-height: 33px;
+}
+
+.ft_t {
+	color: #8ebd3f;
+	font-weight: bold;
+}
+
+.ft_c_red {
+	color: #f00;
+}
+
+.ft_c_blue {
+	color: #0091ff !important;
+}
+
+
+/* @end Common */
+
+/* @group Wrapper Table */
+/* 전체를 감싸는 테이블 */
+.ft_wrapper_table { border-collapse: collapse; border-spacing: 0px; margin: 30px 0 0; width: 100%; }
+.ft_wrapper_table td { margin: 0; padding: 0; }
+.ft_wrapper_table td.nw { height: 27px; width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_nw.gif) no-repeat left top; }
+.ft_wrapper_table td.ne { height: 27px; width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_ne.gif) no-repeat right top; }
+.ft_wrapper_table td.sw { height: 10px; width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_sw.gif) no-repeat left bottom; }
+.ft_wrapper_table td.se { height: 10px; width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_se.gif) no-repeat right bottom; }
+.ft_wrapper_table td.n { height: 27px; background: url(http://plugin.tcomment.com/images/skin/hani/container_n.gif) repeat-x left top; }
+.ft_wrapper_table td.s { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_s.gif) repeat-x left bottom; }
+.ft_wrapper_table td.w { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_w.gif) repeat-y left top; }
+.ft_wrapper_table td.e { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/container_e.gif) repeat-y right top; }
+.ft_wrapper_table td.c { background: #fff; padding: 0px; }
+.ft_wrapper_table td span.tail { width: 60px; height: 27px; background: url(http://plugin.tcomment.com/images/skin/hani/container_tail.gif) no-repeat left top; display: block;}
+
+.ft_credit {
+	display: none;
+	/*margin: 5px;
+	height: 12px;*/
+}
+/*
+.ft_credit a {
+	background: url("http://plugin.tcomment.com/images/skin/green/supportedby.gif") no-repeat left top;
+	height: 12px;
+	width: 149px;
+	text-indent: -9999px;
+	text-align: left;
+	overflow: hidden;
+	display: block;
+	float: right;
+}*/
+
+/* @end */
+
+/* @group Container */
+/* Container */
+.ft_container {
+	
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+
+.ft_container *,
+.ft_popup * {
+	font-family: '돋움', 'Dotum', 'Malgun Gothic', 'Nanum Gothic', sans-serif;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+	letter-spacing: -1px;
+}
+
+	.ft_container_header {
+		line-height: 19px;
+		margin: 10px;
+		overflow: hidden;
+		_zoom: 1;
+		position: absolute;
+	}
+		.ft_top_msg {
+			background:url("http://plugin.tcomment.com/images/skin/hani/head.gif") no-repeat scroll 4px center transparent;
+			float:left;
+			height: 25px;
+			width:81px;
+			text-indent:-9999px;
+		}
+			.ft_top_msg img {
+				vertical-align: middle;
+			}
+			
+.ft_container a {}
+.ft_container a:hover { text-decoration: underline; color: #8ebd3f; }
+/* @end */
+
+
+/* @group Comment Box */
+
+/* 댓글 입력 상자 */
+.ft_cmtbox {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+	/* 상단 정보 */
+	.ft_cmtbox_topinfo {
+		float: right;
+		height: 25px;
+		line-height: 25px;
+		margin: 0 0 5px 0;
+		overflow: hidden;
+	}
+			
+		.ft_cmtbox_topinfo a {
+			display: inline-block;
+			height: 22px;
+			overflow: hidden;
+			text-indent: -9999px;
+			vertical-align: middle;
+			*float: left;
+		}
+		
+		.ft_cmtbox_topinfo .login {
+			background: url(http://plugin.tcomment.com/images/btn_login_topenid.gif) no-repeat left top;
+			width: 84px;
+			margin-left: 5px;
+		}
+	
+	/* 사용자 정보 */
+	.ft_cmtbox_user_info {
+		padding: 10px 0;
+		overflow: hidden;
+		_zoom: 1;
+		line-height: 18px;
+		clear: both;
+		border-top: 1px solid #ededed;
+		letter-spacing: -1px;
+		position: relative;
+	}
+	
+	.ft_cmtbox_user a {
+		text-decoration: none;
+	}
+		
+		.ft_cmtbox_user_info .ft_cmtbox_user_portrait {
+			border: 1px solid #ccc;
+			float: left;
+			
+		}
+		
+		.ft_cmtbox_user_info strong {
+			font-size: 13px;
+		}
+		
+		.ft_cmtbox_user_info span {
+			padding-left: 10px;
+		}
+				
+			.ft_cmtbox_user_info span.ft_cmtbox_user_ccash {
+				background: url(http://plugin.tcomment.com/images/icon_ccash.gif) no-repeat 5px center;
+				padding-left: 18px;
+				font-weight: bold;
+				color: #ff4800;
+			}
+		
+		.ft_cmtbox_user_info .ft_cmtbox_user_info_btns {
+			font-size: 11px;
+			color: #999;
+		}
+		
+			.ft_cmtbox_user_info .ft_cmtbox_user_info_btns a {
+				color: #999;
+				font-size: 11px;
+			}
+		
+		.ft_cmtbox_user_info .ft_cmtbox_user_info_numbers {
+			font-size: 11px;
+		}
+		
+			.ft_cmtbox_user_info_numbers em {
+				font-weight: bold;
+				font-style: normal;
+			}
+			
+		.ft_logout {
+			background: url("http://plugin.tcomment.com/images/btn_logout.gif") no-repeat left top;
+			display: block;
+			right: 0;
+			top: 15px;
+			height: 22px;
+			width: 63px;
+			overflow: hidden;
+			text-indent: -9999px;
+		}
+	
+	.ft_cmtbox form {
+		margin: 0;
+		padding: 0;
+		clear: both;
+	}
+
+	.ft_cmtbox .ft_cmtbox_user {
+		position: relative;
+		display:  block;
+		line-height: 30px;
+		clear: both;
+	}
+		.ft_cmtbox_user label {
+			padding: 0 5px;
+		}
+		
+		.ft_cmtbox_user input {
+			height: 18px;
+			line-height: 18px;
+			padding: 2px;
+			margin: 4px 10px 4px 0;
+			vertical-align: middle;
+		}
+	
+	.ft_cmtbox .ft_cmtbox_body_wrapper {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		clear: both;
+	}
+	
+	.ft_cmtbox .ft_cmtbox_body {
+		padding: 4px;
+		margin: 0 83px 0 0;
+		height: 53px;
+		border: 1px solid #ccc;
+		background: #fff;
+	}
+	
+		.ft_cmtbox .ft_cmtbox_textarea_wrapper {
+			height: 53px;
+			padding: 0px;
+			background: #fff;
+		}
+		
+		.ft_cmtbox .ft_cmtbox_textarea_wrapper.attached {
+			margin-left: 58px;
+			_margin-left: 0;
+		}
+		
+		.ft_cmtbox_attached {
+			width: 50px;
+			position: relative;
+			float: left;
+			padding: 2px;
+		}
+		
+		.ft_cmtbox_btn_clear_attached {
+			position: absolute;
+			right: 4px;
+			top: 4px;
+			width: 11px;
+			height: 11px;
+			background: url('http://image.tcomment.com/plugin/button/close_small_black.gif') no-repeat left top;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+		
+			.ft_cmtbox_body textarea{
+				width: 100%;
+				height: 53px;
+				border: none;
+				outline: none;
+				line-height: 17px;
+				font-size: 12px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				background: #fff url(http://plugin.tcomment.com/images/logo_textarea.gif) no-repeat right bottom;
+			}
+		
+		.ft_cmtbox_update {
+			display: block;
+			width: 75px;
+			height: 63px;
+			background: url(http://plugin.tcomment.com/images/skin/hani/btn_update_cmt.gif) no-repeat left top;
+			border: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+		}
+
+	.ft_cmtbox_user input {
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		outline: none;
+	}
+	
+	.ft_cmtbox_bottom {
+		display: none;
+		margin: 10px 0 1px 5px;
+		padding: 0px;
+		height: 21px;
+		line-height: 21px;
+		overflow: hidden;
+		_zoom: 1;
+	}
+	
+		.ft_cmtbox_bottom * {
+			vertical-align: middle;
+		}
+	
+	.ft_hani_list {
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+	
+	.ft_hani_list li {
+		background: url(http://plugin.tcomment.com/images/skin/hani/b_hani_list.gif) no-repeat left top;
+		padding-left: 20px;
+		list-style: none;
+		color: #666666;
+	}
+	
+	.ft_hani_list em {
+		color: #399a42;
+		font-style: normal;
+	}
+
+/* @end */
+
+/* @group Reply Box */
+/* 댓글에 댓글 입력상자 */
+			
+.ft_replybox {
+	clear: both;
+	margin: 15px 0;
+	position: relative;
+	width: 100%;
+}
+	.ft_replybox .ft_replybox_title {
+		padding: 0 0 3px 0;
+		font-weight: bold;
+		overflow: hidden;
+		_zoom: 1;
+	}
+		.ft_replybox .ft_replybox_title span {
+			float: left;
+		}
+	
+		.ft_replybox .ft_replybox_title .btn_close {
+			float: right;
+			display: block; 
+			width: 14px; 
+			height: 13px; 
+			text-indent: -9999px; 
+			background: url(http://plugin.tcomment.com/images/btn_close_small.gif) no-repeat left top; 
+			overflow: hidden;
+		}
+	
+	.ft_replybox .ft_replybox_user {
+		position: relative;
+		display:  block;
+		line-height: 30px;
+	}
+		.ft_replybox_user label {
+			padding: 0 5px;
+		}
+		
+		.ft_replybox_user input {
+			height: 18px;
+			line-height: 18px;
+			padding: 2px;
+			margin: 4px 10px 4px 0;
+			vertical-align: middle;
+		}
+	
+	.ft_replybox .ft_replybox_body_wrapper {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		clear: both;
+	}
+	
+	.ft_replybox .ft_replybox_body {
+		padding: 4px;
+		margin: 0 83px 0 0;
+		height: 53px;
+		border: 1px solid #ccc;
+		background: #fff;
+	}
+	
+		.ft_replybox .ft_replybox_textarea_wrapper {
+			height: 53px;
+			padding: 0px;
+			background: #fff;
+		}
+		
+		.ft_replybox .ft_replybox_textarea_wrapper.attached {
+			margin-left: 58px;
+			_margin-left: 0;
+		}
+		
+			.ft_replybox_body textarea{
+				width: 100%;
+				height: 51px;
+				border: none;
+				outline: none;
+				line-height: 17px;
+				font-size: 12px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				background: #fff url(http://plugin.tcomment.com/images/logo_textarea.gif) no-repeat right bottom;
+			}
+		
+		.ft_replybox_update {
+			display: block;
+			width: 75px;
+			height: 63px;
+			background: url(http://plugin.tcomment.com/images/skin/hani/btn_update_cmt.gif) no-repeat left top;
+			border: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+		}
+
+	.ft_replybox_user input {
+		height: 18px;
+		line-height: 18px;
+		padding: 2px;
+		margin: 4px 10px 4px 0;
+		vertical-align: middle;
+	}
+	
+	.ft_replybox_bottom {
+		margin: 4px 0 0 0;
+		overflow: hidden;
+		height: 21px;
+		line-height: 21px;
+		_zoom: 1;
+	}
+
+/* @end */
+
+/* @group Modify Box */
+/* 댓글에 댓글 입력상자 */
+			
+.ft_modifybox {
+	clear: both;
+	margin: 15px 0;
+	position: relative;
+	width: 100%;
+}
+	.ft_modifybox .ft_modifybox_title {
+		padding: 0 0 3px 0;
+		font-weight: bold;
+		overflow: hidden;
+		_zoom: 1;
+	}
+		.ft_modifybox .ft_modifybox_title span {
+			float: left;
+		}
+	
+		.ft_modifybox .ft_modifybox_title .btn_close {
+			float: right;
+			display: block; 
+			width: 14px; 
+			height: 13px; 
+			text-indent: -9999px; 
+			background: url(http://plugin.tcomment.com/images/btn_close_small.gif) no-repeat left top; 
+			overflow: hidden;
+		}
+	
+	.ft_modifybox .ft_modifybox_user {
+		position: relative;
+		display:  block;
+		line-height: 30px;
+	}
+		.ft_modifybox_user label {
+			padding: 0 5px;
+		}
+		
+		.ft_modifybox_user input {
+			height: 18px;
+			line-height: 18px;
+			padding: 2px;
+			margin: 4px 10px 4px 0;
+			vertical-align: middle;
+		}
+	
+	.ft_modifybox .ft_modifybox_body_wrapper {
+		position: relative;
+		padding: 0;
+		margin: 0;
+		clear: both;
+	}
+	
+	.ft_modifybox .ft_modifybox_body {
+		padding: 4px;
+		margin: 0 83px 0 0;
+		height: 53px;
+		border: 1px solid #ccc;
+		background: #fff;
+	}
+	
+		.ft_modifybox .ft_modifybox_textarea_wrapper {
+			height: 53px;
+			padding: 0px;
+			background: #fff;
+		}
+		
+		.ft_modifybox .ft_modifybox_textarea_wrapper.attached {
+			margin-left: 58px;
+			_margin-left: 0;
+		}
+		
+			.ft_modifybox_body textarea{
+				width: 100%;
+				height: 53px;
+				border: none;
+				outline: none;
+				line-height: 17px;
+				font-size: 12px;
+				overflow-y: scroll;
+				overflow-x: hidden;
+				background: #fff url(http://plugin.tcomment.com/images/logo_textarea.gif) no-repeat right bottom;
+			}
+		
+		.ft_modifybox_update {
+			display: block;
+			width: 75px;
+			height: 63px;
+			background: url(http://plugin.tcomment.com/images/skin/hani/btn_update_cmt.gif) no-repeat left top;
+			border: none;
+			position: absolute;
+			right: 0;
+			top: 0;
+			cursor: pointer;
+		}
+
+	.ft_modifybox_user input {
+		height: 18px;
+		line-height: 18px;
+		padding: 2px;
+		margin: 4px 10px 4px 0;
+		vertical-align: middle;
+	}
+	
+	.ft_modifybox_bottom {
+		margin: 4px 0 0 0;
+		overflow: hidden;
+		height: 21px;
+		line-height: 21px;
+		_zoom: 1;
+	}
+
+/* @end */
+
+/* 댓글 입력상자 싸는 테이블 */
+.ft_cmtbox table,
+.ft_replybox table,
+.ft_modifybox table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+.ft_cmtbox table td.nw,
+.ft_replybox table td.nw,
+.ft_modifybox table td.nw { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_nw.gif) no-repeat left top !important; }
+.ft_cmtbox table td.n,
+.ft_replybox table td.n,
+.ft_modifybox table td.n { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_n.gif) repeat-x left top !important; }
+.ft_cmtbox table td.ne,
+.ft_replybox table td.ne,
+.ft_modifybox table td.ne { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_ne.gif) no-repeat left top !important; }
+
+.ft_cmtbox table td.w,
+.ft_replybox table td.w,
+.ft_modifybox table td.w { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_w.gif) repeat-y left top !important; }
+.ft_cmtbox table td.c,
+.ft_replybox table td.c,
+.ft_modifybox table td.c { background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_bg.gif) left top !important; }
+.ft_cmtbox table td.e,
+.ft_replybox table td.e,
+.ft_modifybox table td.e { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_e.gif) repeat-y left top !important; }
+
+.ft_cmtbox table td.sw,
+.ft_replybox table td.sw,
+.ft_modifybox table td.sw { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_sw.gif) no-repeat left top !important; }
+.ft_cmtbox table td.s,
+.ft_replybox table td.s,
+.ft_modifybox table td.s { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_s.gif) repeat-x left top !important; }
+.ft_cmtbox table td.se,
+.ft_replybox table td.se,
+.ft_modifybox table td.se { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/cmtbox_se.gif) no-repeat left top !important; }
+
+/* Comment List */
+.ftc_cmt_list {
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+	.ftc_cmt_item {
+		list-style: none;
+		margin: 15px 0 0 0 ;
+		padding: 15px 7px 0;
+		border-top: 1px dotted #d4d4d4;
+	}
+
+		.ftc_cmt_info {
+			height: 26px;
+			padding: 0px;
+			margin: 0;
+			overflow: hidden;
+			position: relative;
+		}
+
+			.ftc_cmt_info_portrait {
+				position: absolute;
+			}
+			
+				.ftc_user_portrait {
+					height: 26px;
+					width: 26px;
+					margin: 0;
+					padding: 0;
+					display: inline-block;
+					vertical-align: middle;
+				}
+				
+			.ftc_cmt_info_inside {
+				border: 1px solid #ececec ;
+				height: 24px;
+				line-height: 24px;
+				_height: 26px;
+				margin-left: 30px;
+				_zoom: 1;
+				overflow: hidden;
+				background-color: #ececec;
+			}
+			
+				.ftc_cmt_body_wrapper.hover .ftc_cmt_info_inside,
+				.ftc_cmt_body_wrapper.profile .ftc_cmt_info_inside {
+					border: 1px solid #8ebd3f;
+				}
+			
+				.ftc_cmt_info_user {
+					float: left;
+					display: block;
+					height: 24px;
+					margin: 0;
+					padding: 0 23px 0 0;
+					line-height: 24px;
+					font-size: 12px;
+					font-weight: bold;
+					white-space: nowrap;
+					text-decoration: none !important;
+					cursor: pointer;
+				}
+				
+					.ftc_cmt_body_wrapper.hover .ftc_cmt_info_user {
+						background: url(http://plugin.tcomment.com/images/skin/green/btn_profile_open.gif) no-repeat right center;
+					}
+					
+					.ftc_cmt_body_wrapper.profile .ftc_cmt_info_user {
+						background: url(http://plugin.tcomment.com/images/skin/green/btn_profile_close.gif) no-repeat right center;
+					}
+				
+						.ftc_cmt_info_user span.user_name {
+							display: inline-block;
+							padding: 6px 0 0 10px;
+							height: 14px;
+							line-height: 14px;
+						}
+						
+						.ftc_cmt_info_user span.user_name a {
+							font-weight: bold;
+							color: #000;
+							text-decoration: none;
+							cursor: default !important;
+						}
+
+				.ftc_cmt_info_support {
+					float: right;
+					height: 18px;
+					margin: 0;
+					padding: 3px 0;
+					font-size: 11px;
+				}
+				
+					.ftc_cmt_info_support span {
+						float: left;
+						height: 18px;
+						line-height: 18px;
+					}
+					
+					/* 동아일보 초콜릿 표시 */
+					.ftc_cmt_ccash {
+						display: none;
+						background: url(http://plugin.tcomment.com/images/icon_thumbup_x.gif) no-repeat left 1px;
+						padding: 0 5px 0 25px;
+						height: 24px;
+						line-height: 24px;
+					}
+					
+					.ftc_cmt_info_support_btns {
+						padding: 0 5px;
+						height: 18px;
+					}
+					
+					.ftc_cmt_info_support_btns {
+						padding: 0 5px;
+						height: 18px;
+					}
+						.ftc_cmt_info_support_btns img {
+							vertical-align: top;
+							margin: 0;
+							padding: 0;
+						}
+		
+						.ftc_cmt_info_support_btns a {
+							float: left;
+							padding: 0;
+							margin: 0 5px 0 0;
+							height: 18px;
+						}
+						
+						.ftc_cmt_info_support_btns .btn_recommend {
+							/*background: url(http://plugin.tcomment.com/images/skin/green/btn_recommend.gif) no-repeat;*/
+							font-weight: bold;
+							color: #288131;
+							margin-left: 10px;
+						}
+						
+						.ftc_cmt_info_support_btns .btn_disagree {
+							/*background: url(http://plugin.tcomment.com/images/skin/green/btn_disagree.gif) no-repeat;*/
+							font-weight: bold;
+							color: #bcbcbc;
+							margin-left: 10px;
+						}
+						
+						.ftc_cmt_info_support_btn_support {
+							background: url(http://plugin.tcomment.com/images/skin/green/btn_support.gif) no-repeat;
+							width: 67px;					
+						}
+	
+	.ftc_cmt_body {
+		word-break: break-all;
+		white-space: pre-wrap;
+		padding: 10px 3px;
+		line-height: 18px;
+	}
+
+		.ftc_cmt_body .ftc_cmt_body_video,
+		.ftc_cmt_body .ftc_cmt_body_image {
+			margin-bottom: 10px;
+			position: relative;
+			width: 80px;
+			height: 60px;
+			overflow: hidden;
+		}
+		
+		.ftc_cmt_body_video_elem_wrapper,
+		.ftc_cmt_body_image_elem_wrapper {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		
+		.ftc_cmt_body_image_elem_wrapper {
+			cursor: pointer;
+		}
+		
+		.ftc_cmt_body_video_caption,
+		.ftc_cmt_body_image_caption {
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			display: none;
+			width: 100%;
+			height: 25px;
+			background-color: #f3f3f3;
+		}
+		
+		.ftc_cmt_body_video_caption span,
+		.ftc_cmt_body_image_caption span {
+			float: left;
+			padding-left: 5px;
+			line-height: 22px;
+			margin-right: 18px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		
+		.ftc_cmt_body_video_caption a.shrink,
+		.ftc_cmt_body_image_caption a.shrink {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			display: block;
+			background: #f3f3f3 url(http://plugin.tcomment.com/images/btn_close_red.gif) no-repeat left top;
+			float: right;
+			margin: 5px;
+			height: 14px;
+			width: 16px;
+			overflow: hidden;
+			text-indent: -9999px;
+		}
+		
+		.ftc_cmt_body_video.small,
+		.ftc_cmt_body_image.small {
+			float: left;
+			margin: 0 10px 10px 0;
+		}
+		
+		.ftc_cmt_body_video.stretch,
+		.ftc_cmt_body_image.stretch {
+			float: none;
+			margin: 0;
+		}
+		
+		.small .ftc_cmt_body_video_overlay,
+		.small .ftc_cmt_body_image_overlay {
+			display: block !important;
+		}
+		
+		.stretch .ftc_cmt_body_video_overlay,
+		.stretch .ftc_cmt_body_image_overlay {
+			display: none !important;
+		}
+		
+		.ftc_cmt_body_image_overlay,
+		.ftc_cmt_body_video_overlay {
+			position: absolute;
+			cursor: pointer;
+			left: 50%;
+			top: 50%;
+			margin-left: -40px;
+			margin-top: -30px;
+			width: 80px;
+			height: 60px;	
+		}
+		
+		.ftc_cmt_body_video_overlay {
+			background: url(http://plugin.tcomment.com/images/icon_mo_open.png) no-repeat left top;
+		}
+		
+		* html .ftc_cmt_body_video_overlay {
+			background: none;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/icon_mo_open.png', sizingMethod='scale');
+		}
+		
+		.ftc_cmt_body_image_overlay {
+			background: url(http://plugin.tcomment.com/images/icon_po_open.png) no-repeat left top;
+		}
+		
+		* html .ftc_cmt_body_image_overlay {
+			background: none;
+			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/icon_po_open.png', sizingMethod='scale');
+		}
+		
+		.ftc_cmt_body .cmt_body {
+			display: block;
+			font-size: 12px;
+			letter-spacing: 0;
+		}
+		
+		.ftc_cmt_body .date_info {
+			color: #ccc;
+		}
+		
+		.ftc_cmt_body .ftc_cmt_tools_action_modify,
+		.ftc_cmt_body .ftc_cmt_tools_action_remove {
+			margin-left: 5px;
+		}
+		
+		.ftc_cmt_body .cmt_disabled {
+			text-align: center;
+			color: #999;
+			margin: 10px;
+		}
+	
+	.ftc_cmt_tools {
+		padding: 0px 3px 0;
+		height: 19px;
+		line-height: 19px;
+		clear: both;
+	}
+		.ftc_cmt_tools_action {
+			float: left;
+			height: 19px;
+		}
+			.ftc_cmt_tools_action a {
+				display: block;
+				float: left;
+				padding: 0;
+				margin: 0 5px 0 0;
+				height: 19px;
+				overflow: hidden;
+				text-indent: -9999px;
+			
+			}
+			
+			.ftc_cmt_tools_action_reply {
+				background: url(http://plugin.tcomment.com/images/skin/green/btn_reply.gif) no-repeat left top;
+				width: 74px;
+			}
+			
+			.ftc_cmt_tools_action_report {
+				background: url(http://plugin.tcomment.com/images/skin/green/btn_report.gif) no-repeat left top;
+				width: 53px;
+			}
+		
+		.ftc_cmt_tools_supporters {
+			float: right;
+			height: 19px;
+		}
+		
+			.ftc_cmt_tools_supporters_popup {
+	
+			}
+	
+	.ftc_cmt_item_empty {
+		display: none;
+		list-style: none;
+	}
+	
+/* Comment Higherarchy */
+.ftc_cmt_item_child {
+	padding: 0;
+	margin-top: 15px;
+	border-top: 0;
+}
+
+.ftc_cmt_item_child .ftc_cmt_item_div {
+	padding-left: 18px;
+	background: url(http://plugin.tcomment.com/images/arrow_reply.gif) no-repeat 3px 9px;
+}
+
+#ftc_replybox {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+#ftc_replybox form { margin: 0px; }
+
+#ftc_form_login_reply p {
+	display: inline !important;
+	float: right !important;
+	margin: 5px 0 !important;
+}
+
+/* @group Featured Box */
+/* 베플 감싸는 박스 */
+.ftc_cmt_featured {display:none; margin: 10px 0 20px; }
+.ftc_cmt_featured .ftc_cmt_featured { margin-bottom: 0px; }
+.ftc_cmt_featured .ftc_cmt_item { margin: 0; padding: 0; border-top: 0; }
+
+.ftc_featured_border { border-collapse: collapse; border-spacing: 0px; width: 100%; }
+.ftc_featured_border td { margin: 0; padding: 0; }
+
+.ftc_featured_border td.ne { width: 10px; height: 15px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_ne.gif) no-repeat left top; }
+.ftc_featured_border td.n { height: 15px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_n.gif) repeat-x left top; }
+.ftc_featured_border td.nw { width: 10px; height: 15px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_nw.gif) no-repeat right top; }
+.ftc_featured_border td.e { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_e.gif) repeat-y left top; }
+.ftc_featured_border td.c {  }
+.ftc_featured_border td.w { width: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_w.gif) repeat-y right top; }
+.ftc_featured_border td.se { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_se.gif) no-repeat left bottom; }
+.ftc_featured_border td.s { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_s.gif) repeat-x left top; }
+.ftc_featured_border td.sw { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_sw.gif) no-repeat right bottom; }
+
+.ftc_featured_item_2 .ftc_featured_border td.ne,
+.ftc_featured_item_3 .ftc_featured_border td.ne { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_c_ne.gif) no-repeat left top; }
+.ftc_featured_item_2 .ftc_featured_border td.n,
+.ftc_featured_item_3 .ftc_featured_border td.n { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_n.gif) repeat-x left 3px; }
+.ftc_featured_item_2 .ftc_featured_border td.nw,
+.ftc_featured_item_3 .ftc_featured_border td.nw { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_c_nw.gif) no-repeat right top; }
+
+.ftc_featured_border td span.tail { width: 18px; height: 15px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_tail.gif) no-repeat right top; display: block;}
+.ftc_featured_item_2 .ftc_featured_border td span.tail { width: 0px; height: 0px; display: none; }
+.ftc_featured_item_3 .ftc_featured_border td span.tail { width: 0px; height: 0px; display: none; }
+
+.ftc_featured_item_2,
+.ftc_featured_item_3 { margin-top: -10px !important; }
+.ftc_featured_item_2 .ftc_featured_border td.c,
+.ftc_featured_item_3 .ftc_featured_border td.c { padding-top: 10px; }
+
+#ftc_featured_item_empty .ftc_featured_border td.ne { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_ne.gif) no-repeat left top; }
+#ftc_featured_item_empty .ftc_featured_border td.n { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_n.gif); }
+#ftc_featured_item_empty .ftc_featured_border td.nw { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_nw.gif); }
+#ftc_featured_item_empty .ftc_featured_border td.w,
+#ftc_featured_item_empty .ftc_featured_border td.c,
+#ftc_featured_item_empty .ftc_featured_border td.s,
+#ftc_featured_item_empty .ftc_featured_border td.e { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_bg.gif); }
+#ftc_featured_item_empty .ftc_featured_border td.se { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_se.gif) no-repeat left top; }
+#ftc_featured_item_empty .ftc_featured_border td.sw { background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_sw.gif); }
+
+#ftc_featured_item_empty.ftc_featured_item_2 .ftc_featured_border td.ne,
+#ftc_featured_item_empty.ftc_featured_item_3 .ftc_featured_border td.ne { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_c_ne.gif) no-repeat left top; }
+#ftc_featured_item_empty.ftc_featured_item_2 .ftc_featured_border td.n,
+#ftc_featured_item_empty.ftc_featured_item_3 .ftc_featured_border td.n { height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_n.gif) repeat-x left 3px; }
+#ftc_featured_item_empty.ftc_featured_item_2 .ftc_featured_border td.nw,
+#ftc_featured_item_empty.ftc_featured_item_3 .ftc_featured_border td.nw { width: 10px; height: 10px; background: url(http://plugin.tcomment.com/images/skin/hani/featured_empty_c_nw.gif) no-repeat right top; }
+
+#best_empty h3 { font-weight: normal; font-size: 16px; margin: 0}
+#best_empty p.help { color: #fff; line-height: 18px !important; margin: 0; font-size: 11px; letter-spacing: -1px; text-align: center; } 
+
+/* @end */
+
+/* 댓글달때 표시할 화면 */
+#ft_comment_add_info_guest,
+#ft_comment_add_ccash_content { background: #78A1F0; border: 2px solid #4977cf; color: #fff; height: 88px; padding: 10px; font-size: 12px !important;}
+
+#ft_comment_add_info_guest {
+	cursor: pointer;
+}
+
+#ft_comment_add_info_guest h3,
+#ft_comment_add_ccash_content h3 {
+	color: #f9ff02;
+	float: left;
+	margin: 0;
+	font-size: 12px !important;
+}
+
+#ft_comment_add_info_guest span.button {
+	float: right;
+	margin: 0;
+}
+
+#ft_comment_add_info_guest a {
+	line-height: 11px;
+	color: #fff;
+}
+#ft_comment_add_info_guest p,
+#ft_comment_add_ccash_content p {
+	clear: both;
+	font-weight: normal !important;
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+}
+#ft_comment_add_info_guest ol{
+	margin: 0; padding: 0px 0px 0px 20px;
+}
+#ft_comment_add_info_guest li {
+	margin: 0; padding: 0;  line-height: 15px !important
+}
+
+#ft_comment_add_ccash {
+	
+}
+
+#ft_comment_add_ccash_content {
+
+}
+#ft_comment_add_fillbar_wrapper {
+	height:  58px;
+}
+
+/* @group Buttons */
+
+/**
+ * 가로로 늘어나는 이미지 버튼 
+ * @link http://naradesign.net/wp/2008/10/31/203/
+ */
+span.button,
+span.button a,
+span.button button,
+span.button input { color:#000 !important; position:relative; margin:0 !important; display:inline-block; text-decoration:none !important; border:0 !important; white-space:nowrap; background: url(http://plugin.tcomment.com/images/btn_white.gif) no-repeat; vertical-align:middle; overflow:visible; }
+span.button { height:28px; padding:0 !important; margin-right:2px !important; background-position:left -25px; overflow:visible;}
+span.button a,
+span.button button,
+span.button input{ left:2px;}
+
+span.button.small { height:18px; background-position:left 0px; }
+span.button.large { height:35px; background-position:left -60px; }
+
+/*
+ * 세부설정 
+ */
+span.button a { padding:8px 10px 8px 8px !important; *padding:6px 10px 8px 8px !important; background-position:right -25px; _top:-1px; line-height: 11px; }
+span.button.large a { padding:7px 20px 8px 18px; *padding:7px 20px 8px 18px; _top:-1px; background-position:right -60px; line-height: 20px;}
+span.button.small a { padding:4px 6px 3px 4px !important; *padding:3px 6px 5px 4px !important; background-position:right 0; _top:-1px; line-height: 11px; }
+
+span.button button { height:28px; padding:0 10px 4px !important; *height: 26px; _padding-bottom: 0; background-position:right -25px; cursor:pointer; *top: -1px; line-height: 26px; }
+span.button input { height:28px; padding:0 10px 4px !important; *height: 26px; _padding-bottom: 0; background-position:right -25px; cursor:pointer; *top: -1px; line-height: 26px; }
+
+span.button.large button,
+span.button.large input { height:35px; padding:0 20px 0 18px; background-position:right -60px; line-height: 35px; }
+
+span.button.small button,
+span.button.small input { height:17px; padding:0 6px 0 4px !important; background-position: right 0px; line-height: 18px; }
+
+
+span.button.strong { font-weight: bold;}
+
+span.button.disabled * {
+	cursor: default !important;
+	color: #bebebe;
+}
+
+/*
+ * 기타 설정
+ */
+span.button.strong * { font-weight:bold !important;}
+
+/*
+ * 색상 설정
+ */
+span.button.purple,
+span.button.purple a,
+span.button.purple button,
+span.button.purple input { background-image:url(http://plugin.tcomment.com/images/btn_purple.gif); color:#fff !important;}
+
+/* @end */
+
+/* MODULES */
+.ft_module_video_btn {
+	display: block;
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 96px;
+	height: 22px;
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/btn_add_video.gif) no-repeat right top;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ft_module_image_btn {
+	display: block;
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 0;
+	width: 96px;
+	height: 22px;
+	background: url(http://plugin.tcomment.com/images/modules/image_upload/btn_add_image.gif) no-repeat right top;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+/* Uploadify */
+.uploadifyQueue {
+	display: none;
+}
+
+/* ui */
+/* 뉴스뱅크 이미지 리스트 */
+#ft_popup_image_newsbank_result ul li a {
+	_width: 88px !important;
+	_height: 88px !important;
+	background-color: transparent;
+}
+
+#ft_popup_image_newsbank_result ul li a:hover {
+	_width: 88px !important;
+	_height: 88px !important;
+	_border-width: 12px !important;
+}
+
+
+#ft_popup_image_newsbank_result ul li.current a {
+	_width: 88px !important;
+	_height: 88px !important;
+}
+
+
+#ft_popup_image_newsbank_result ul li img {
+	_margin: 6px !important;
+	_display: inline !important;
+}
+
+/* 페이징 */
+.ft_paginate { padding: 18px 0; text-align:center; clear: both; border-top: 1px dotted #d4d4d4; margin-top:15px; }
+.ft_paginate a,
+.ft_paginate strong,
+.ft_paginate span
+ { position:relative; display: inline-block; margin-right: 4px; padding:2px 0 4px; color: #999 !important; text-decoration: none !important; border: 1px solid #fff; font-size: 11px; line-height: 9px; min-width: 15px; _width: 15px; }
+.ft_paginate strong { color:#2e9ab2 !important; border:1px solid #2e9ab2 !important; }
+.ft_paginate .pre { margin-right: 10px; padding: 2px 6px 4px 16px; }
+.ft_paginate .next { margin-left: 10px; padding: 2px 16px 4px 6px; }
+.ft_paginate a.pre { background:url(http://static.naver.com/common/paginate/bu_pg3_l_on.gif) no-repeat 6px 9px !important; }
+.ft_paginate a.next { background:url(http://static.naver.com/common/paginate/bu_pg3_r_on.gif) no-repeat 71px 9px !important; }
+.ft_paginate .pre,
+.ft_paginate .next { display:inline-block; color:#cdcdcd; border:1px solid #cdcdcd; position:relative; font-size: 9px; line-height: 9px; }
+.ft_paginate a,
+.ft_paginate strong,
+.ft_paginate span,
+.ft_paginate a.pre,
+.ft_paginate a.next { white-space: nowrap; font-family: tahoma, sans-serif; font-size: 11px;  _padding-top: 3px; _padding-bottom: 2px; }
+.ft_paginate a:hover { color: #2e9ab2 !important; border:1px solid #2e9ab2; }
+.ft_paginate span {
+	color: #ccc !important;
+}
+
+
+
+/* ft_table */
+.ft_table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.ft_table td {
+    line-height: 18px;
+    padding: 8px;
+}
+
+.ft_table th,
+.ft_table tbody td {
+    padding: 8px;
+    vertical-align: top;
+    font-size: 11px;
+    font-family: 'Dotum', 'Malgun Gothic', 'Nanum Gothic', sans-serif;
+}
+
+.ft_table thead th {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px dotted #dfdfdf;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.ft_table td.ft_table_c {
+	text-align: center;
+}
+
+.ft_table td.ft_table_td_r {
+    border-right: 1px solid #dfdfdf
+}
+
+.ft_table td.ft_table_h {
+    border-top: 1px dotted #dfdfdf;
+    background-color: #f9f9f9;
+}
+
+.ft_progress_msg {
+	background: url("http://image.tcomment.com/plugin/loading.gif") no-repeat center top;
+	color: #999;
+	font-weight: bold;
+	height: 40px;
+	padding-top:  100px;
+	left: 50%;
+	line-height: 100%;
+	margin-left: -150px;
+	margin-top: -70px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 300px;
+}
+
+/* @group POPUP - 기본 */
+/*.ft_popup { background: transparent !important; font-family: 'Dotum', 'Malgun Gothic', 'Nanum Gothic', sans-serif; font-size: 12px; color: #666; }
+.ft_popup_table { border-collapse: collapse; border-spacing: 0px; }
+.ft_popup_table td { margin: 0; padding: 0; background: #d83206 url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_border.gif); }
+.ft_popup_table td.nw { height: 5px; width: 5px; }
+.ft_popup_table td.ne { height: 5px; width: 5px; }
+.ft_popup_table td.sw { height: 5px; width: 5px; }
+.ft_popup_table td.se { height: 5px; width: 5px; }
+.ft_popup_table td.n { height: 5px; }
+.ft_popup_table td.s { height: 5px; }
+.ft_popup_table td.w { width: 5px; }
+.ft_popup_table td.e { width: 5px; }
+.ft_popup_table td.c { background: #fff; }
+.ft_popup_table td.c .ft_popup_c { background: #fff url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_c.gif) repeat-x left top; border: 1px solid #fff; }
+
+.ft_popup_title { height: 45px; line-height: 45px; padding: 0px 50px 0px 0px; margin: 0 13px 10px; text-align: left; border-bottom: 1px solid #dfdfdf; font-size: 12px; font-weight: bold; _zoom: 1;}
+.ft_popup_title img { vertical-align: middle; }
+.ft_popup .btn_close { display: block; width: 16px; height: 16px; text-indent: -9999px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_btn_close.gif) no-repeat left top; position: absolute; right: 20px; top: 20px; overflow: hidden; }
+
+.ft_popup_content { padding: 0; margin: 13px; text-align: left;}
+.ft_popup_content h3 { margin: 0 -5px 5px; padding: 0 25px 5px 5px; border-bottom: 1px solid #ccc; font-size: 13px;}
+
+.ft_popup_content p { margin: 0 0 5px 0;  font-size: 12px; clear: both; overflow: hidden; _zoom: 1; }
+
+.ft_popup_buttons { height: 40px; margin: 15px 13px 3px; padding: 20px 0 0; text-align: center; clear: both; border-top: 1px solid #dfdfdf}
+
+.ft_popup_table td.n span.tail { width: 13px; height: 7px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_tail.gif) no-repeat left top; display: block; position: absolute; top: -7px; }*/
+
+.ft_popup { background: transparent !important; font-family: 'Dotum', 'Malgun Gothic', 'Nanum Gothic', sans-serif; font-size: 12px; color: #666; z-index: 99999;}
+.ft_overlay { z-index: 99999; }
+.ft_popup_table { border-collapse: collapse; border-spacing: 0px; _height: 1px;}
+.ft_popup_table td { margin: 0; padding: 0; }
+.ft_popup_table td.nw { height: 15px; width: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_nw.png) no-repeat left top; }
+.ft_popup_table td.ne { height: 15px; width: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_ne.png) no-repeat right top; }
+.ft_popup_table td.sw { height: 15px; width: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_sw.png) no-repeat left bottom; }
+.ft_popup_table td.se { height: 15px; width: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_se.png) no-repeat right bottom; }
+.ft_popup_table td.n { height: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_n.png) repeat-x left top; }
+.ft_popup_table td.s { height: 15px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_s.png) repeat-x left bottom; }
+.ft_popup_table td.w { width: 15px;  background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_w.png) repeat-y left top; }
+.ft_popup_table td.e { width: 15px;  background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_e.png) repeat-y right top; }
+.ft_popup_table td.c { background: #fff; padding: 0; margin: 0; }
+
+.ft_popup_title { background: url("http://plugin.tcomment.com/images/skin/green/popup/ft_popup_title_bg.gif") repeat-x scroll left top transparent; position:  relative; padding: 6px 50px 0 15px; margin: -2px -9px 10px; text-align: left; height: 36px; font-size: 12px; font-weight: bold; overflow: hidden; _zoom: 1; }
+.ft_popup_title_inside { background: url(http://plugin.tcomment.com/images/popup/b_popup_title.gif) no-repeat left top; padding: 0 0 4px 25px; line-height: 18px; height: 18px; display: block; }
+.ft_popup_title_inside img { vertical-align: middle; }
+.ft_popup_title_inside .icon_ccash { margin: 3px 0 5px; }
+
+/* .ft_popup_title img { vertical-align: middle; } */
+.ft_popup .btn_close { display: block; width: 19px; height: 17px; text-indent: -9999px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_closebtn.gif) no-repeat left top; position: absolute; right: 14px; top: 4px; overflow: hidden; }
+.ft_popup_content { padding: 5px; text-align: left;}
+.ft_popup_content h3 { margin: 0 -5px 5px; padding: 0 25px 5px 5px; border-bottom: 1px solid #ccc; font-size: 13px;}
+.ft_popup_content p { margin: 3px 0 0 0;  font-size: 12px;}
+
+.ft_popup_buttons { text-align: center; padding: 10px 0; clear: both;}
+.ft_popup_links { margin-top: 15px; text-align: left; }
+
+.ft_popup a { text-decoration: underline; color: #e5832e; }
+.ft_popup a:hover { color: #e16330; }
+
+.ft_popup em { color: #e16330; font-style: normal; }
+
+.ft_popup_info {
+	margin: 0 0 15px ;
+	text-align: center;
+	font-size: 11px;
+}
+
+/* 팝업 폼 관련  */
+.ft_popup form { margin: 0; }
+
+ol.form {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	_zoom: 1;
+	width: ;
+	border: 1px solid #d0d0d0;
+	border-left: none;
+	border-right: none;
+}
+
+ol.form li {
+	clear: both;
+	overflow: hidden;
+	_overflow: visible;
+	_zoom: 1;
+	border-top: 1px dotted #d0d0d0;
+	margin-top: -1px;
+	padding-bottom: 1px;
+	min-height: 30px;
+	_height: 30px;
+	list-style: none;
+}
+
+ol.form div.h {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+ol.form div.h label {
+	background: url(http://plugin.tcomment.com/images/b_label.gif) no-repeat 14px center;
+	padding-left: 26px;
+	font-size: 11px;
+	vertical-align: middle;
+	float: left;
+}
+
+ol.form div.i {
+	overflow: visible;
+	margin: 0 0 0 120px !important;
+	padding: 6px 0 6px 13px;
+}
+
+ol.form img {
+	vertical-align: middle;
+}
+
+ol.form input,
+ol.form select {
+	vertical-align: middlea;
+}
+
+.ft_popup_table span.tail { width: 15px; height: 13px; background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_popup_tail.png) no-repeat left top; display: block; position: absolute; top: -7px; }
+
+/* IE6 */
+* html .ft_popup_table td {  }
+* html .ft_popup_table td.nw { background-image: none !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_nw.png', sizingMethod='scale'); }
+* html .ft_popup_table td.ne { background-image: none !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_ne.png', sizingMethod='scale'); }
+* html .ft_popup_table td.sw { background-image: none !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_sw.png', sizingMethod='scale'); }
+* html .ft_popup_table td.se { background-image: none !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_se.png', sizingMethod='scale'); }
+* html .ft_popup_table td.s { background-image: none !important; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_s.png', sizingMethod='scale'); }
+* html .ft_popup_table span.tail { background-image:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_tail.png', sizingMethod='scale'); top: -7px; }
+
+/*
+* html .ft_popup_table td.n { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_n.png', sizingMethod='scale'); }
+* html .ft_popup_table td.w { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_w.png', sizingMethod='scale'); }
+* html .ft_popup_table td.e { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://plugin.tcomment.com/images/skin/green/popup/ft_popup_e.png', sizingMethod='scale'); }
+*/
+
+/* @end */
+
+/* @group TOPENID Popup */
+#ft_topenid_popup table { width: 560px !important; }
+#ft_topenid_popup .ft_popup_title a { color: #999 !important; text-decoration: none !important; }
+#ft_topenid_popup_join_link,
+#ft_topenid_popup_login_link { background: none !important; }
+#ft_topenid_popup .ft_popup_title a.current { color: #000 !important; }
+#ft_topenid_popup span.tail { left: 427px; }
+
+.ft_module_topenid_tab {
+    _zoom: 1;
+    height: 25px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.ft_module_topenid_tab_btn {
+    float: left;
+    list-style: none;
+    margin: 0 2px -1px 0;
+    background: #efefef;
+    height: 27px;
+}
+
+.ft_module_topenid_tab_btn a {
+	color: #b0b0b0 !important;
+	text-decoration: none !important;
+	font-weight: bold;
+	display: block;
+	height: 26px;
+	width: 140px;
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ft_module_topenid_tab_btn.current a {
+    color: #666;
+}
+
+.ft_module_topenid_tab_btn a.login {
+	background: url(http://plugin.tcomment.com/images/modules/topenid/tab_login_off.gif) no-repeat left top;	
+}
+.ft_module_topenid_tab_btn a.join {
+	background: url(http://plugin.tcomment.com/images/modules/topenid/tab_join_off.gif) no-repeat left top;	
+}
+
+.ft_module_topenid_tab_btn.current a.login {
+	background: url(http://plugin.tcomment.com/images/modules/topenid/tab_login_on.gif) no-repeat left top !important;
+}
+.ft_module_topenid_tab_btn.current a.join {
+	background: url(http://plugin.tcomment.com/images/modules/topenid/tab_join_on.gif) no-repeat left top !important;
+}
+
+.ft_topenid_auth {
+	margin-top: 10px;
+}
+
+.ft_form_msg {
+	background: transparent url(http://plugin.tcomment.com/images/icon_error.gif) no-repeat 5px 5px;
+	padding: 5px 5px 5px 26px;
+	line-height: 16px;
+	margin-left: 105px;
+	color: #f66;
+	font-weight: bold;
+}
+
+
+
+/* @end */
+
+/* @group 슬라이드 팝업 - 프로필 */
+.ft_profile {
+	clear: both;
+	padding: 0;
+	margin: 5px 0 !important;
+}
+
+.ft_profile_close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px;
+	width: 14px;
+	height: 13px;
+	background: url("http://plugin.tcomment.com/images/btn_close_small.gif") no-repeat left top;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ft_profile_wrapper {
+	background-repeat: repeat-x;
+	position: relative;
+	height: 381px;
+}
+
+.ft_profile_wrapper h3 {
+	margin: 0;
+	padding: 0 0 0 10px;
+	height: 25px !important;
+	line-height: 25px;
+}
+
+.ft_profile_left { background-repeat: no-repeat; background-position: left top; position: absolute; width: 100%; height: 381px; left: 0; top: 0; }
+.ft_profile_right { background-repeat: no-repeat; background-position: right top; position: absolute; width: 100%; height: 381px; left: 0; top: 0; }
+
+.ft_profile_content {
+    width: 100%;
+    height: 381px; 
+    position: absolute;
+}
+
+.ft_profile_c_left {
+	position: absolute;
+	left: 6px;
+	top: 26;
+	width: 117px;
+	height: 267px;
+}
+
+	.ft_profile_c_portrait {
+		margin: 18px 28px 15px;
+		width: 61px;
+		height: 61px;
+	}
+	
+	.ft_profile_c_nick { text-align: center; display: block; font-weight: bold; font-size: 11px; height: 15px; line-height: 15px; }
+		.ft_profile_c_nick img { vertical-align: middle; }
+	.ft_profile_c_id { text-align: center; display: block; font-size: 10px; font-family: tahoma, sans-serif; }
+	
+	.ft_profile_c_stat { margin: 8px; padding: 8px 0; border-top: 1px solid #ccc; }
+		.ft_profile_c_stat li { list-style: none; margin: 0; padding: 0 0 0 15px; height: 16px; line-height: 16px; background: url("http://plugin.tcomment.com/images/popup/profile/b_label.gif") no-repeat 5px 7px; }
+	
+	.ft_profile_c_homepage { background: url("http://plugin.tcomment.com/images/popup/profile/homepage.gif") no-repeat scroll left top transparent; border-top: 1px solid #CCCCCC; display: block; font-size: 11px; line-height: 12px; margin: 8px 8px 2px 8px; padding: 24px 0 0 19px; word-wrap: break-word; }
+		.ft_profile_c_homepage a { color: #039dff !important; font-family: tahoma, sans-serif; font-size: 10px; }
+
+	.ft_profile_c_twitter { background: url("http://plugin.tcomment.com/images/icon_twitter.gif") no-repeat scroll 4px top transparent; display: block; font-size: 11px; line-height: 12px; margin: 8px 8px 0 8px; padding: 0px 0 0 19px; word-wrap: break-word; }
+		.ft_profile_c_twitter a { color: #039dff !important; font-family: tahoma, sans-serif; font-size: 10px; }
+		
+.ft_profile_c_body { margin: 0px 43px 7px 144px; height: 349px; }
+
+	.ft_profile_c_comments_title {
+		margin: 0;
+		padding: 14px 0 7px 22px;
+		font-size: 11px;
+		font-weight: bold;
+		background: url("http://plugin.tcomment.com/images/popup/profile/c_comments_title.gif") no-repeat left 17px;
+		_background-position-y: 15px;
+		border-bottom: 1px solid #ccc;
+		line-height: 11px;
+	}
+		.ft_profile_c_comments_list {
+			border-bottom: 1px solid #ccc;
+			height: 272px;
+			overflow: auto;
+		}
+		
+			.ft_profile_c_comments_list li {
+				padding: 8px 0 0;
+				margin: -1px 0 8px;
+				border-top: 1px dotted #ccc;
+				font-size: 11px;
+			}
+			
+			.ft_profile_c_comments_list li .from {
+				padding: 8px 0 0 18px; margin: 0;
+				background: url("http://plugin.tcomment.com/images/popup/profile/b_from.gif") no-repeat 3px 13px;
+				_background-position-y: 9px;
+			}
+			
+			.ft_profile_c_comments_list li .from a { 
+				font-size: 11px;
+				color: #c8c8c8;
+			}
+			
+	
+	.ft_profile_c_fan_title {
+		margin: 0 0 10px 0;
+		padding: 14px 0 7px 8px;
+		font-size: 11px;
+		font-weight: bold;
+		background: url("http://plugin.tcomment.com/images/popup/profile/b_label.gif") no-repeat left 19px;
+		border-bottom: 1px solid #ccc;
+		line-height: 11px;
+	}
+	
+	.ft_profile_c_star_title {
+		margin: 0 0 10px 0;
+		padding: 14px 0 7px 8px;
+		font-size: 11px;
+		font-weight: bold;
+		background: url("http://plugin.tcomment.com/images/popup/profile/b_label.gif") no-repeat left 19px;
+		border-bottom: 1px solid #ccc;
+		line-height: 11px;
+	}
+
+.ft_profile_c_buttons {
+    position: absolute;
+    right: 6px;
+    _right: 5px;
+    top: 43px;
+    width: 22px;
+}
+
+.ft_profile_c_buttons li {
+    list-style: none;
+    margin: 0 0 1px 0;
+    padding: 0;
+}
+
+
+
+.ft_profile_list {
+	margin: 0;
+	padding: 0;
+}
+
+.ft_profile_list li.ft_profile_item {
+	list-style: none;
+	padding: 3px 0;
+	background: url(http://plugin.tcomment.com/images/skin/green/popup/ft_profile_line.gif) repeat-x left bottom;
+}
+
+.ft_profile_list .user_name {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fd6533;
+}
+
+.ft_profile_cmt_list {
+	margin-left: 100px;
+	margin-top: -25px;
+}
+
+.ft_profile_cmt_item {
+	display: block;
+	list-style: none;
+}
+
+.ft_profile_item p {
+	padding: 4px 0 8px;
+}
+
+.ft_profile_cmt_item .from img {
+	vertical-align: middle;
+}
+
+.ft_profile_cmt_item .from a {
+	color: #00f;
+}
+
+
+.ft_profile_iconlist {
+	height: 120px;
+	overflow: hidden;
+}
+
+.ft_profile_iconlist li {
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	padding-top: 2px;
+	float: left;
+	background: none;
+}
+
+.ft_profile_iconlist li img {
+	display: block;
+	width: 26px;
+	height: 26px;
+	margin: 0 17px;
+}
+
+.ft_profile_iconlist li span {
+	display: block;
+	width: 60px;
+	margin-top: 2px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ft_profile_iconlist li.empty {
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	line-height: 36px;
+}
+
+.ft_profile_bottom {
+	padding-top: 10px;
+	text-align: right;
+}
+/* @end */
+
+/* @group 신고하기 팝업 */
+#ft_popup_report table {
+	width: 520px !important;	
+}
+
+#ft_popup_report ul {
+	width: 440px;
+	height: 60px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#ft_popup_report ul li {
+	width: 110px;
+	height: 20px;
+	float: left;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#ft_popup_report label {
+	font-size: 12px;
+}
+
+#ft_popup_report p input {
+	width: 400px;
+	height: 18px;
+	margin: 3px 0;
+	padding: 2px;
+	line-height: 18px;
+}
+
+#ft_popup_report span.tail {
+	left: 90px;
+}
+/* @end */
+
+/* @group 지지한사람 보기 팝업 */
+.ft_popup_supporters {
+	padding: 0;
+	margin-bottom: 10px;
+	background: url("http://plugin.tcomment.com/images/popup/supporters_bg.gif") repeat-x left top;
+}
+	.ft_popup_supporters_left {
+		background: url("http://plugin.tcomment.com/images/popup/supporters_left.gif") no-repeat left top;
+	}
+	
+	.ft_popup_supporters_right {
+		background: url("http://plugin.tcomment.com/images/popup/supporters_right.gif") no-repeat right top;
+		height: 172px;
+	}
+	
+	.ft_supporters_placeholder {
+		padding: 10px;
+		font-size: 11px;
+	}
+	
+		.ft_popup_supporters p {
+			padding-bottom: 10px;
+		}
+		
+		.ft_popup_supporters ul {
+			margin: 0;
+			padding: 6px;
+			overflow: hidden;
+			_zoom: 1;
+		}
+			
+			.ft_popup_supporters li {
+				display: inline-block;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				width: 122px;
+				height: 42px;
+				font-size: 11px;
+			}
+			
+				.ft_popup_supporters li a {
+					display: block;
+					padding: 2px;
+					width: 112px;
+					height: 36px;
+					border: 2px solid #fff;
+					color: #999 !important;
+					text-decoration: none;
+					line-height: 16px;
+				}
+				
+				.ft_popup_supporters li a:hover {
+					color: #999;
+					border: 2px solid #8ebd3f;
+					text-decoration: none !important;
+				}
+				
+				.ft_popup_supporters li img {
+					float: left;
+					padding-right: 3px;
+				}
+				
+				.ft_popup_supporters li span {
+					height: 16px;
+					line-height: 16px;
+				}
+				
+				.ft_popup_supporters li em {
+					background: url(http://plugin.tcomment.com/images/icon_ccash_x.gif) no-repeat left 3px;
+					padding: 0 0 0 23px;
+					height: 16px;
+					line-height: 16px;
+					font-style: normal;
+				}
+	
+	.ft_popup_supporters .loading {
+		padding-left: 240px;
+		background-position: 212px center;
+		height: 50px;
+		line-height: 50px;
+	}
+
+/* @end */
+
+/* @group 지지하기 팝업 */
+#ft_popup_support .ft_popup_table {
+	width: 560px;
+}
+
+.ft_popup_support_ccash_list {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px dotted #dfdfdf;
+    margin: 10px 0;
+    padding: 5px 0;
+    _zoom: 1;
+}
+
+	.ft_popup_support_ccash_item {
+	    list-style: none;
+	    display: inline-block;
+	    _display: block;
+	    _float: left;
+	    margin: 5px;
+	    _margin: 5px 4px;
+	    padding: 0;
+	    background: url(http://plugin.tcomment.com/images/popup/support/btn_off.gif) no-repeat left top;
+	}
+	
+		.ft_popup_support_ccash_item a {
+		    display: block;
+		    width: 94px;
+		    height: 86px;
+		    text-align: center;
+		    color: #666 !important;
+		    text-decoration: none !important;
+		}
+		
+			.ft_popup_support_ccash_item a img {
+			    height: 52px;
+			    width: 52px;
+			    margin: 3px 0 8px;
+			}
+	
+	.ft_popup_support_ccash_item.current {
+	    background: url(http://plugin.tcomment.com/images/popup/support/btn_on.gif) no-repeat left top !important;
+	}
+	
+	
+	.ft_popup_support_ccash_custom {
+	    text-align: center;
+	    margin: 15px;
+	    font-weight: bold;
+	}
+	
+		#ft_popup_support_ccash_amount {
+		    width: 50px;
+		}
+		
+	.ft_popup_support_ccash_min {
+		padding: 10px;
+		border-top: 1px solid #dfdfdf;
+		border-bottom: 1px solid #dfdfdf;
+		background-color: #f9f9f9;
+		line-height: 11px;
+		text-align: center;
+	}
+
+/* @end */
+
+
+/* @group 결재하기 팝업 */
+#ft_popup_payment span.tail {
+	left: 95px;
+}
+/* @end */
+
+/* @group 이미지 업로드 팝업 */
+#ft_popup_image table {
+	width: 560px !important;
+}
+
+#ft_popup_image span.tail {
+	left: 495px;
+}
+
+#ft_popup_image .ft_image_preview_wrapper {
+	height: 184px; overflow: hidden;
+	_zoom: 1;
+}
+
+#ft_popup_image .ft_image_preview {
+	width: 240px;
+	height: 180px;
+	min-width: 240px;
+	min-height: 180px;
+	max-width: 240px;
+	float: left;
+	border: 1px solid #ccc;
+	background: #f8f8f8;
+}
+
+
+.ft_module_image_tab {
+    _zoom: 1;
+    height: 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ft_module_image_tab_btn {
+    float: left;
+    list-style: none;
+    margin: 0 2px -1px 0;
+    background: #efefef;
+    height: 29px;
+}
+
+.ft_module_image_tab_btn.current {
+    background: #fff
+}
+
+.ft_module_image_tab_btn a {
+	color: #b0b0b0 !important;
+	text-decoration: none !important;
+	font-weight: bold;
+	display: block;
+	height: 28px;
+	width: 140px;
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ft_module_image_tab_btn.current a {
+    color: #666;
+}
+
+.ft_module_image_tab_btn a.attach {
+	background: url(http://plugin.tcomment.com/images/modules/image_upload/tab_attach_off.gif) no-repeat left top;	
+}
+.ft_module_image_tab_btn a.flickr {
+	background: url(http://plugin.tcomment.com/images/modules/image_upload/tab_flickr_off.gif) no-repeat left top;	
+}
+
+.ft_module_image_tab_btn.current a.attach {
+	background: url(http://plugin.tcomment.com/images/modules/image_upload/tab_attach_on.gif) no-repeat left top !important;
+}
+.ft_module_image_tab_btn.current a.flickr {
+	background: url(http://plugin.tcomment.com/images/modules/image_upload/tab_flickr_on.gif) no-repeat left top !important;
+}
+
+.ft_module_image_tab_info {
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	padding: 15px;
+	text-align: center;
+}
+
+.ft_popup_image_attach ol.form {
+	border-top: none;
+}
+
+/* 이미지 검색 모듈 스타일 */
+.ft_module_image_search {
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	padding: 15px;
+}
+
+.ft_module_image_search input,
+.ft_module_image_search img,
+.ft_module_image_search span  {
+	_float: left;
+}
+
+.ft_module_image_search span {
+	_margin-left: 5px !important;
+}
+
+.ft_module_image_order {
+    margin: 10px;
+}
+
+.ft_module_image_order a {
+	background: none !important;
+    color: #00f !important;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+.ft_module_image_order a:hover,
+.ft_module_image_order a.current {
+    color: #fff !important;
+    background-color: #00f !important;
+    font-weight: bold;
+}
+
+/* 플리커 이미지 */
+#ft_popup_image_flickr_search {
+	
+}
+
+#ft_popup_image_flickr_term {
+	width: 320px;
+}
+
+#ft_popup_image_flickr_search img {
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+#ft_popup_image_flickr_result {
+	padding: 0;
+	margin: 15px 0;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+#ft_popup_image_flickr_result ul {
+	margin: 0;
+	padding: 15px 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+#ft_popup_image_flickr_result ul li {
+	list-style: none;
+	display: block;
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #e4e4e4;
+	margin: 6px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#ft_popup_image_flickr_result ul li a {
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: 0;
+	padding: 0;
+	border: 12px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(http://plugin.tcomment.com/images/blank.gif);
+	_width: 88px;
+	_height: 88px;
+}
+
+#ft_popup_image_flickr_result ul li a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #fff;
+	_width: 88px;
+	_height: 88px;
+}
+
+
+#ft_popup_image_flickr_result ul li.current a,
+#ft_popup_image_flickr_result ul li.current a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #8dc929;
+}
+
+
+#ft_popup_image_flickr_result ul li img {
+    width: 78px;
+    height: 78px;
+    margin: 6px;
+    display: block;
+}
+
+
+
+#ft_image_upload_inputUploader {
+
+}
+/* @end */
+
+/* @group 동영상 첨부 팝업 */
+#ft_popup_video table {
+	width: 560px !important;
+}
+
+#ft_popup_video #ft_video_url,
+#ft_popup_video ol.form .button {
+	float: left;
+}
+
+#ft_popup_video .ft_video_preview_wrapper {
+	height: 184px;
+	width: 244px;
+	margin-top: 10px;
+	_zoom: 1;
+	display: block;
+}
+
+#ft_popup_video .ft_video_preview {
+	width: 240px;
+	height: 180px;
+	border: 2px solid #ccc;
+	background: #eee;
+	display: block;
+}
+
+.ft_module_video_tab {
+    _zoom: 1;
+    height: 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.ft_module_video_tab_btn {
+    float: left;
+    list-style: none;
+    margin: 0 2px -1px 0;
+    background: #efefef;
+    height: 29px;
+}
+
+.ft_module_video_tab_btn.current {
+    background: #fff
+}
+
+.ft_module_video_tab_btn a {
+	color: #b0b0b0 !important;
+	text-decoration: none !important;
+	font-weight: bold;
+	display: block;
+	height: 28px;
+	width: 140px;
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.ft_module_video_tab_btn.current a {
+    color: #666;
+}
+
+.ft_module_video_tab_btn a.youtube {
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/tab_youtube_off.gif) no-repeat left top;	
+}
+.ft_module_video_tab_btn a.daum {
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/tab_daum_off.gif) no-repeat left top;	
+}
+
+.ft_module_video_tab_btn.current a.youtube {
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/tab_youtube_on.gif) no-repeat left top !important;
+}
+.ft_module_video_tab_btn.current a.daum {
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/tab_daum_on.gif) no-repeat left top !important;
+}
+
+.ft_module_video_tab_info {
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	padding: 15px;
+	text-align: center;
+}
+
+.ft_popup_video_attach ol.form {
+	border-top: none;
+}
+
+/* 동영상 검색 모듈 스타일 */
+.ft_module_video_search {
+	border: 1px solid #dcdcdc;
+	border-top: none;
+	padding: 15px;
+}
+
+.ft_module_video_search input,
+.ft_module_video_search img,
+.ft_module_video_search span  {
+	_float: left;
+}
+
+.ft_module_video_search span {
+	_margin-left: 5px !important;
+}
+
+.ft_module_video_order {
+    margin: 10px;
+}
+
+.ft_module_video_order a {
+	background: none !important;
+    color: #00f !important;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+.ft_module_video_order a:hover,
+.ft_module_video_order a.current {
+    color: #fff !important;
+    background-color: #00f !important;
+    font-weight: bold;
+}
+
+// 유튜브
+#ft_popup_video_youtube_search {
+	
+}
+
+#ft_popup_video_youtube_term {
+	width: 320px;
+}
+
+#ft_popup_video_youtube_search img {
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+#ft_popup_video_youtube_result {
+	padding: 0;
+	margin: 15px 0;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+	_zoom: 1;
+}
+
+#ft_popup_video_youtube_result ul {
+	margin: 0;
+	padding: 15px 0 10px;
+    overflow: hidden;
+    _zoom: 1;
+    width: 315px;
+    float: left;
+}
+
+#ft_popup_video_youtube_result ul li {
+	list-style: none;
+	display: block;
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #e4e4e4;
+	margin: 6px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#ft_popup_video_youtube_result ul li a {
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: 0;
+	padding: 0;
+	border: 12px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(http://plugin.tcomment.com/images/blank.gif);
+	_width: 88px;
+	_height: 88px;
+}
+
+#ft_popup_video_youtube_result ul li a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #fff;
+	_width: 88px;
+	_height: 88px;
+}
+
+
+#ft_popup_video_youtube_result ul li.current a,
+#ft_popup_video_youtube_result ul li.current a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #8dc929;
+}
+
+
+#ft_popup_video_youtube_result ul li img {
+    width: 78px;
+    height: 78px;
+    margin: 6px;
+    display: block;
+}
+
+#ft_popup_video_youtube_result .ft_popup_video_youtube_preview {
+	float: left;
+	width: 215px;
+	height: 196px;
+	margin-top: 20px;
+	overflow: hidden;
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/youtube_preview.gif) no-repeat left top;
+}
+
+
+#ft_popup_video_youtube_order {
+	display: none;
+}
+
+// 다음
+#ft_popup_video_daum_search {
+	
+}
+
+#ft_popup_video_daum_term {
+	width: 320px;
+}
+
+#ft_popup_video_daum_search img {
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+#ft_popup_video_daum_result {
+	padding: 0;
+	margin: 15px 0;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+	_zoom: 1;
+}
+
+#ft_popup_video_daum_result ul {
+	margin: 0;
+	padding: 15px 0 10px;
+    overflow: hidden;
+    _zoom: 1;
+    width: 315px;
+    float: left;
+}
+
+#ft_popup_video_daum_result ul li {
+	list-style: none;
+	display: block;
+	float: left;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #e4e4e4;
+	margin: 6px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#ft_popup_video_daum_result ul li a {
+	display: block;
+	width: 66px;
+	height: 66px;
+	margin: 0;
+	padding: 0;
+	border: 12px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(http://plugin.tcomment.com/images/blank.gif);
+	_width: 88px;
+	_height: 88px;
+}
+
+#ft_popup_video_daum_result ul li a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #fff;
+	_width: 88px;
+	_height: 88px;
+}
+
+
+#ft_popup_video_daum_result ul li.current a,
+#ft_popup_video_daum_result ul li.current a:hover {
+	width: 78px;
+	height: 78px;
+	border: 6px solid #8dc929;
+}
+
+
+#ft_popup_video_daum_result ul li img {
+    width: 78px;
+    height: 78px;
+    margin: 6px;
+    display: block;
+}
+
+#ft_popup_video_daum_result .ft_popup_video_daum_preview {
+	float: left;
+	width: 215px;
+	height: 196px;
+	margin-top: 20px;
+	overflow: hidden;
+	background: url(http://plugin.tcomment.com/images/modules/video_upload/daum_preview.gif) no-repeat left top;
+}
+
+
+#ft_popup_video_daum_order {
+
+}
+/* @end */
+
+/* @group 프로필 편집 팝업 */
+
+#ft_popup_manage_profile table {
+	width:  480px;
+}
+
+#ft_popup_manage_profile .ft_profile_portrait_wrapper {
+
+}
+
+#ft_popup_manage_profile #ft_manage_profile_portrait_preview {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #ccc;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+#ft_popup_manage_profile .tail {
+	left: 270px;
+}
+
+#ft_popup_manage_profile .ft_password_change {
+	display: none;
+}
+
+#ft_manage_profile_portraitUploader {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+/* @end */
+
+
+/* @group 소셜로그인 팝업 */
+.ft_osu_buttons {
+	float: left;
+	
+	/*height: 25px;*/
+}
+
+.ft_osu_buttons li {
+	margin: 0;
+	list-style: none;
+	cursor: pointer;
+	/*height: 25px;
+	width: 24px;*/
+	float: left;
+}
+
+.ft_osu_buttons li.ft_osu_buttons_title {
+	width: 88px;
+	padding: 0;
+	background: url('http://plugin.tcomment.com/images/sprite_osu_btns.gif') no-repeat 0px 0px;
+	height: 25px;
+	line-height: 25px;
+	text-indent: -9999px;
+	cursor: default;
+}
+
+.ft_osu_buttons li.last {
+	border-bottom: 0px;
+}
+
+.ft_osu_buttons .ftc_osu_btn_list {
+	padding: 0 0 0 5px;
+	display: block;
+	height: 25px;
+	background-image: url('http://plugin.tcomment.com/images/sprite_osu_btns.gif');
+	background-position: 0px 200px;
+	background-repeat: repeat-x;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.ft_osu_buttons .ftc_osu_btn_list span {
+	background-image: url('http://plugin.tcomment.com/images/sprite_osu_btns.gif');
+	background-repeat: no-repeat;
+	display: block;
+	height: 25px;
+	width: 24px;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.ft_osu_buttons .ftc_osu_hani span {
+	background: url('http://plugin.tcomment.com/images/skin/hani/btn_login_hani.gif') no-repeat left top;
+	width: 58px;
+}
+
+.ft_osu_buttons .ftc_osu_twitter span {
+	width: 25px;
+	background-position: -241px 0px;
+}
+
+.ft_osu_buttons .ftc_osu_facebook span {
+	background-position: -266px 0px;
+}
+
+.ft_osu_buttons .ftc_osu_google span {
+	background-position: -314px 0px;
+}
+
+.ft_osu_buttons .ftc_osu_me2day span {
+	background-position: -16px -131px;
+}
+
+.ft_osu_buttons .ftc_osu_yahoo span {
+	background-position: -16px -156px;
+}
+
+/* @end */
+
+
+/* @group 한겨례 특수 */
+.ft_hani_before {
+	background-color: #EFEFEF; 
+	color: #666666; font-family: 'Dotum', sans-serif;
+	font-size: 8pt;
+	line-height: 18px;
+	padding: 5px;
+	text-align: right;
+	margin-bottom: 30px;
+}
+
+.ft_hani_before * { vertical-align:middle; }
+
+.ft_hani_trackback {
+	position: absolute;
+	text-align: right;
+	width: 590px;	
+	vertical-align: bottom;
+	line-height: 18px;
+	margin-bottom: -45px;
+}
+
+.ft_hani_trackback strong {
+	font-weight: bold;
+	color: #399a42;
+	text-decoration: underline;
+}
+
+/* @end */

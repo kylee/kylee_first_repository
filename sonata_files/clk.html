@@ -1,0 +1,51 @@
+	try {
+          var g_afd = "hani2_web";
+          var doc_char = document.charset;
+	  var dom;
+	  var CLink;
+	  var base_url;
+	  var script_url;
+	  var obj_kl_js;	
+	  var obj_clscript;	
+	
+	  if (g_afd == "seoul2_web" || g_afd == "seoulm2_web") {
+	    document.domain = "seoul.co.kr";
+	    dom = parent.document;
+	    base_url = escape("");
+	  } else {
+	    dom = document;
+	    base_url = document.location;
+	    base_url = cl_toSafeEscape(base_url);
+	  }
+	
+	  CLink = dom.getElementById("CLink");
+	  var script_url = "http://script.keywordlink.co.kr/script/klink_script2.php?afd="+g_afd+"&base_url="+base_url+"&doc_char="+doc_char;
+
+	  obj_clscript = dom.createElement("script");
+	  obj_clscript.setAttribute("src", script_url); 
+	  CLink.appendChild(obj_clscript);
+	} catch(e) {
+	  ;
+	}
+	
+	function cl_toSafeString(obj) {
+	  var ret = "";
+	  var undef;
+	  try {
+	    if (obj == undef) return "";
+	    ret = obj.toString();
+	  } catch (e) {
+	    ret = "";
+	  }
+	  return ret;
+	}
+	
+	function cl_toSafeEscape(obj) {
+	  var ret = cl_toSafeString(obj);
+	  try {
+	     ret = encodeURIComponent(ret);
+	  } catch(e) {
+	     ret = escape(ret);
+	  }
+	  return ret;
+	}

@@ -1,0 +1,20 @@
+.img {border:0px}
+	.f12black { font-family:µ¸¿ò; color:#353535; font-size:12px; }
+	.f12black a:link { color:#353535; text-decoration:none; }
+	.f12black a:visited { color:#353535; text-decoration:none; }
+	.f12black a:hover { color:#353535; text-decoration:underline; }
+	
+	.f12white { font-family:µ¸¿ò; color:#ffffff; font-size:12px; }
+	.f12white a:link { color:#ffffff; text-decoration:none; }
+	.f12white a:visited { color:#ffffff; text-decoration:none; }
+	.f12white a:hover { color:#ffffff; text-decoration:underline; }
+
+	.f12gray { font-family:µ¸¿ò; color:#959595; font-size:12px; }
+	.f12gray a:link { color:#959595; text-decoration:none; }
+	.f12gray a:visited { color:#959595; text-decoration:none; }
+	.f12gray a:hover { color:#959595; text-decoration:underline; }
+
+	.f11gray { font-family:µ¸¿ò; color:#959595; font-size:11px; }
+	.f11gray a:link { color:#959595; text-decoration:none; }
+	.f11gray a:visited { color:#959595; text-decoration:none; }
+	.f11gray a:hover { color:#959595; text-decoration:underline; }
